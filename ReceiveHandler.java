@@ -33,29 +33,26 @@ private static Lock lock = new ReentrantLock();
     this.allInputStream = allInputStream;
   }
 
-  public synchronized void sendMessage(byte[] msg){
-	  try{
-		  //stream write the message
-		  out.write(msg);
-		  out.flush();
-	  }
-	  catch(IOException ioException){
-		  ioException.printStackTrace();
-	  }
+  static synchronized public void sendMessage(DataOutputStream outstream, byte[] msg){
+    try{
+      synchronized(DataOutputStream.class){
+        //stream write the message
+        outstream.write(msg);
+        outstream.flush();
+      }
+    }
+    catch(IOException ioException){
+      ioException.printStackTrace();
+    }
   }
 
   public synchronized void sendMessageToAll(byte[] msg){
-	  try{
+
         for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
             DataOutputStream outstream = entry.getValue();
-            outstream.write(msg);
-            outstream.flush();
-        }
+             sendMessage(outstream, msg);
 
-	  }
-	  catch(IOException ioException){
-		  ioException.printStackTrace();
-	  }
+        }
   }
 
   public void run() {
@@ -65,7 +62,6 @@ private static Lock lock = new ReentrantLock();
 
     while(true){
         try{
-
             /*Handle all kinds of message*/
             /*length == length of message (first 4 bytes)*/
             /*msgType[0] == type of message (byte 5)*/
@@ -216,7 +212,7 @@ private static Lock lock = new ReentrantLock();
    //     byte[] bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsg.msgLen, bitfieldMsg.msgType);
      //   bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsgByteArray, bitfieldMsg.payload);
 
-        sendMessage(bitfieldMsg.message);
+        sendMessage(out, bitfieldMsg.message);
           
         System.out.println("Peer " + peer.peerId + ": Bitfield message is sent to " + neighborId);
     }catch(Exception e){
@@ -263,7 +259,7 @@ private static Lock lock = new ReentrantLock();
                 /*set a start time before send data*/
         startDownloadTime = System.currentTimeMillis();
 
-        sendMessage(requestMsg.message);
+        sendMessage(out, requestMsg.message);
         Utilities.threadSleep(10);
         /*set requestedBitfield after send request message to advoid request same piece from different neighbor*/
        /*synchronized(this){
@@ -351,7 +347,7 @@ private static Lock lock = new ReentrantLock();
          /*conver object message to byte array*/
          //byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
 
-         sendMessage(interestedMsg.message);
+         sendMessage(out, interestedMsg.message);
          System.out.println("Peer " + peer.peerId + " : send interested message to " + neighborId);
 
          peer.neighborIInterested.put(neighborId, true);
@@ -391,7 +387,7 @@ private static Lock lock = new ReentrantLock();
             /*conver object message to byte array*/
            // byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
 
-            sendMessage(interestedMsg.message);
+            sendMessage(out, interestedMsg.message);
             System.out.println("Peer " + myId + ": Interested message is send to " + neighborId);
 
             peer.neighborIInterested.put(neighborId, true);
@@ -406,7 +402,7 @@ private static Lock lock = new ReentrantLock();
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
 
-          sendMessage(notInterestedMsg.message);
+          sendMessage(out, notInterestedMsg.message);
           System.out.println("Peer " + myId + ": not Interested message is send to " + neighborId);
 
           peer.neighborIInterested.put(neighborId, false);
@@ -431,9 +427,10 @@ private static Lock lock = new ReentrantLock();
 
         /***send the piece of data to neighbor***/
         message pieceMsg = (new message()).piece(indexOfPiece, piece); /*create a message object*/
+
         //byte[] pieceMsgByteArray = Utilities.combineByteArray(pieceMsg.msgLen, pieceMsg.msgType);//conver object message to byte array
         //pieceMsgByteArray = Utilities.combineByteArray(pieceMsgByteArray, pieceMsg.payload); //conver object message to byte array
-        sendMessage(pieceMsg.message);
+        sendMessage(out, pieceMsg.message);
         System.out.println("Peer " + peer.peerId + ": Piece message is send to " + neighborId);  
     }
     catch(Exception e){
@@ -494,7 +491,6 @@ private static Lock lock = new ReentrantLock();
         boolean completeFile = false;
 
         synchronized(this){
-
           myBitfieldMap = updateBitfield(peer.peerId, indexOfPiece);
 
           //completeFile = Utilities.checkForCompelteFile(myBitfieldMap, numberOfPiece);
@@ -529,7 +525,7 @@ private static Lock lock = new ReentrantLock();
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
 
-          sendMessage(notInterestedMsg.message);
+          sendMessage(out, notInterestedMsg.message);
 
           peer.neighborIInterested.put(neighborId, false);
           System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId + "!!!!!!!!!!");
@@ -555,7 +551,7 @@ private static Lock lock = new ReentrantLock();
                     /*set a start time before send data*/
               startDownloadTime = System.currentTimeMillis();
 
-              sendMessage(requestMsg.message);
+              sendMessage(out, requestMsg.message);
 
               Utilities.threadSleep(10);
               System.out.println("neighborId: " + neighborId + ": desireed index: " + desiredIndex);

@@ -2,8 +2,11 @@ import java.io.*;
 import java.nio.*;
 import java.util.*;
 import java.text.*;
-
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 public class Utilities {  
+  private static Lock lock = new ReentrantLock();
+
   /*result[0] store left most byte of number*/
   /*For example if i = 256 = 2^8*/
   /*result[0] = 0000 0000*/
@@ -241,6 +244,19 @@ static public void writeToFile(String filename, String context){
       System.out.print((byte)value[i] + " ");
     }
     System.out.println();
+  }
+
+  static synchronized public void sendMessage(DataOutputStream outstream, byte[] msg){
+    try{
+      synchronized(DataOutputStream.class){
+        //stream write the message
+        outstream.write(msg);
+        outstream.flush();
+      }
+    }
+    catch(IOException ioException){
+      ioException.printStackTrace();
+    }
   }
   
 

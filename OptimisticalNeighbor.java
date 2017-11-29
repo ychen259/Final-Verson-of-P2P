@@ -22,7 +22,7 @@ public class OptimisticalNeighbor implements Runnable {
      //this.executor = executor;
    }
 
-  public synchronized void sendMessage(DataOutputStream out, byte[] msg){
+  /*public synchronized void sendMessage(DataOutputStream out, byte[] msg){
     try{
       //stream write the message
       out.write(msg);
@@ -31,7 +31,7 @@ public class OptimisticalNeighbor implements Runnable {
     catch(IOException ioException){
       ioException.printStackTrace();
     }
-  }
+  }*/
 
   public int generateARandomOptimisticalNeighbor(peerProcess peer){
     int peerId;
@@ -92,7 +92,7 @@ public class OptimisticalNeighbor implements Runnable {
     message unchokeMsg = (new message()).unchoke();
 
     /*send a unchoke message*/
-    sendMessage(out, unchokeMsg.message);
+    Utilities.sendMessage(out, unchokeMsg.message);
 
     System.out.println("Peer " + peer.peerId + ": unchoke message send to " + optimisticalId + "in optimistical!!!!!!!!!!!!");
 

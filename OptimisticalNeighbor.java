@@ -14,9 +14,10 @@ public class OptimisticalNeighbor implements Runnable {
                                                                                               /*I need this to send have message to all neighbors*/
                                                                                               /*Integer: neighbor peer ID*/
                                                                                               /*ObjectOutputStream: their output stream*/
-  ScheduledFuture<?> stop;
+  SocketHandler socket;
   //ScheduledExecutorService  executor;
-   public OptimisticalNeighbor(peerProcess peer, Map<Integer,DataOutputStream> allOutStream){
+   public OptimisticalNeighbor(SocketHandler socket, peerProcess peer, Map<Integer,DataOutputStream> allOutStream){
+     this.socket = socket;
      this.peer = peer;
      this.allOutStream = allOutStream;
      //this.executor = executor;
@@ -92,7 +93,8 @@ public class OptimisticalNeighbor implements Runnable {
     message unchokeMsg = (new message()).unchoke();
 
     /*send a unchoke message*/
-    Utilities.sendMessage(out, unchokeMsg.message);
+    Utilities util = new Utilities();
+    util.sendMessage(out, unchokeMsg.message);
 
     System.out.println("Peer " + peer.peerId + ": unchoke message send to " + optimisticalId + "in optimistical!!!!!!!!!!!!");
 

@@ -14,11 +14,12 @@ public class preferredNeighbor implements Runnable {
                                                                                               /*I need this to send have message to all neighbors*/
                                                                                               /*Integer: neighbor peer ID*/
                                                                                               /*ObjectOutputStream: their output stream*/
-
+  SocketHandler socket;
   int NumberOfPreferredNeighbors;
  // ScheduledExecutorService  executor;
 
-   public preferredNeighbor(peerProcess peer, Map<Integer,DataOutputStream> allOutStream){
+   public preferredNeighbor(SocketHandler socket, peerProcess peer, Map<Integer,DataOutputStream> allOutStream){
+     this.socket = socket;
      this.peer = peer;
      this.allOutStream = allOutStream;
      //this.executor = executor;
@@ -80,7 +81,8 @@ public class preferredNeighbor implements Runnable {
                     message chokeMsg = (new message()).choke();
 
                     /*send a unchoke message*/
-                    Utilities.sendMessage(out, chokeMsg.message);
+                    Utilities util = new Utilities();
+                    util.sendMessage(out, chokeMsg.message);
 
                     System.out.println("Peer " + peer.peerId + ": choke message send to " + neighborId);
 
@@ -98,7 +100,8 @@ public class preferredNeighbor implements Runnable {
                     message chokeMsg = (new message()).choke();
 
                     /*send a unchoke message*/
-                    Utilities.sendMessage(out, chokeMsg.message);
+                    Utilities util = new Utilities();
+                    util.sendMessage(out, chokeMsg.message);
 
                     System.out.println("Peer " + peer.peerId + ": choke message send to " + neighborId);
 
@@ -116,7 +119,8 @@ public class preferredNeighbor implements Runnable {
                   message unchokeMsg = (new message()).unchoke();
 
                   /*send a unchoke message*/
-                  Utilities.sendMessage(out, unchokeMsg.message);
+                  Utilities util = new Utilities();
+                  util.sendMessage(out, unchokeMsg.message);
 
                   System.out.println("Peer " + peer.peerId + ": unchoke message send to " + neighborId);
                 }
@@ -158,7 +162,8 @@ public class preferredNeighbor implements Runnable {
                     message chokeMsg = (new message()).choke();
 
                     /*send a unchoke message*/
-                    Utilities.sendMessage(out, chokeMsg.message);
+                    Utilities util = new Utilities();
+                    util.sendMessage(out, chokeMsg.message);
 
                     System.out.println("Peer " + peer.peerId + ": choke message send to " + neighborId + "!!!!!!!!!!!!!!!!!!!!");
                     continue;
@@ -180,7 +185,8 @@ public class preferredNeighbor implements Runnable {
                 //byte[] unchokeMsgByteArray = Utilities.combineByteArray(unchokeMsg.msgLen, unchokeMsg.msgType);
 
                 /*send a unchoke message*/
-                Utilities.sendMessage(out, unchokeMsg.message);
+                Utilities util = new Utilities();
+                util.sendMessage(out, unchokeMsg.message);
 
                 /*I did not choke neighbor*/
                 peer.neighborIChoke.put(neighborId, false);

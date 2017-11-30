@@ -12,7 +12,7 @@ import java.util.concurrent.*;
  */
 public class SocketHandler implements Runnable {
 	peerProcess peer;
-    DataOutputStream out;         //stream write to the socket
+  DataOutputStream out;         //stream write to the socket
  	DataInputStream in;
  
   Map<Integer,DataOutputStream> allOutStream = new HashMap<Integer, DataOutputStream>(); /*store all output stream*/
@@ -27,6 +27,21 @@ public class SocketHandler implements Runnable {
 
   int UnchokingInterval;
   int OptimisticUnchokingInterval;
+
+ /* public void sendMessage(DataOutputStream outsteam, byte[] msg){
+    synchronized(this){
+      try{
+        System.out.println("Start to send .........");
+        //stream write the message
+        outsteam.write(msg);
+        outsteam.flush();
+        System.out.println("Finish to send .........");
+      }
+      catch(IOException ioException){
+        ioException.printStackTrace();
+      }
+    }
+  }*/
 
 	public SocketHandler(int peerId){
 	  this.peer = new peerProcess(peerId);
@@ -94,8 +109,8 @@ public class SocketHandler implements Runnable {
         }
       }
       Utilities.threadSleep(1000);
-      executor.scheduleAtFixedRate(new preferredNeighbor(peer, allOutStream), 0, UnchokingInterval, TimeUnit.SECONDS);
-      executor.scheduleAtFixedRate(new OptimisticalNeighbor(peer, allOutStream), 0, OptimisticUnchokingInterval, TimeUnit.SECONDS);
+      executor.scheduleAtFixedRate(new preferredNeighbor(this, peer, allOutStream), 0, UnchokingInterval, TimeUnit.SECONDS);
+      executor.scheduleAtFixedRate(new OptimisticalNeighbor(this, peer, allOutStream), 0, OptimisticUnchokingInterval, TimeUnit.SECONDS);
     }
 
 }

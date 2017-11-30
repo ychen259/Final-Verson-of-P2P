@@ -12,6 +12,9 @@ import java.io.*;
 import java.util.*;
 import java.util.logging.*;
 import java.net.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /*
  * The StartRemotePeers class b PeerInfo.cfg and starts remote peer processes.
  * You must modify this program a little bit if your peer processes are written in C or C++.
@@ -27,7 +30,6 @@ public class peerProcess {
     int numberOfPieceIhave = 0;
 
     int filesize;
-
 
     byte [] requestedBitfield;
     Map<Integer,Boolean> neighborIChoke = new HashMap<Integer, Boolean>();  //the neighbor send me choke message
@@ -60,7 +62,6 @@ public class peerProcess {
     /*Everyone's bitfield (including myself)*/
     Map<Integer,byte[]> bitfieldMap = new HashMap<Integer, byte[]>(); // Everyone's bitfield
                                                                       //Integer：peerID || byte[]: bitfield
-
 
     public peerProcess(int peerId){
     	this.peerId = peerId;

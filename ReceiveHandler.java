@@ -15,6 +15,7 @@ public class ReceiveHandler implements Runnable {
   int neighborId;
   DataOutputStream out;         //stream write to the socket
   DataInputStream in;
+
   Map<Integer,DataOutputStream> allOutStream = new HashMap<Integer, DataOutputStream>(); /*store all output stream*/
                                                                                               /*I need this to send have message to all neighbors*/
                                                                                               /*Integer: neighbor peer ID*/
@@ -23,7 +24,7 @@ public class ReceiveHandler implements Runnable {
 
   long startDownloadTime;
   long stopDownloadTime;
-private static Lock lock = new ReentrantLock();
+  private static Lock lock = new ReentrantLock();
   public ReceiveHandler(peerProcess peer, int neighborId, DataInputStream in, DataOutputStream out, Map<Integer,DataOutputStream> allOutStream,Map<Integer,DataInputStream> allInputStream){
     this.peer = peer;
     this.neighborId = neighborId;
@@ -33,10 +34,10 @@ private static Lock lock = new ReentrantLock();
     this.allInputStream = allInputStream;
   }
 
-  static synchronized public void sendMessage(DataOutputStream outstream, byte[] msg){
+  /*static public void sendMessage(DataOutputStream outstream, byte[] msg){
     try{
-      synchronized(DataOutputStream.class){
         //stream write the message
+        synchronized(ReceiveHandler.class){
         outstream.write(msg);
         outstream.flush();
       }
@@ -44,13 +45,14 @@ private static Lock lock = new ReentrantLock();
     catch(IOException ioException){
       ioException.printStackTrace();
     }
-  }
+  }*/
 
   public synchronized void sendMessageToAll(byte[] msg){
 
         for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
             DataOutputStream outstream = entry.getValue();
-             sendMessage(outstream, msg);
+             Utilities util = new Utilities();
+             util.sendMessage(outstream, msg);
 
         }
   }
@@ -211,8 +213,8 @@ private static Lock lock = new ReentrantLock();
         /*conver object message to byte array*/
    //     byte[] bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsg.msgLen, bitfieldMsg.msgType);
      //   bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsgByteArray, bitfieldMsg.payload);
-
-        sendMessage(out, bitfieldMsg.message);
+        Utilities util = new Utilities();
+        util.sendMessage(out, bitfieldMsg.message);
           
         System.out.println("Peer " + peer.peerId + ": Bitfield message is sent to " + neighborId);
     }catch(Exception e){
@@ -258,8 +260,9 @@ private static Lock lock = new ReentrantLock();
 
                 /*set a start time before send data*/
         startDownloadTime = System.currentTimeMillis();
+        Utilities util = new Utilities();
+        util.sendMessage(out, requestMsg.message);
 
-        sendMessage(out, requestMsg.message);
         Utilities.threadSleep(10);
         /*set requestedBitfield after send request message to advoid request same piece from different neighbor*/
        /*synchronized(this){
@@ -346,8 +349,10 @@ private static Lock lock = new ReentrantLock();
 
          /*conver object message to byte array*/
          //byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
+         Utilities util = new Utilities();
+         util.sendMessage(out, interestedMsg.message);
 
-         sendMessage(out, interestedMsg.message);
+
          System.out.println("Peer " + peer.peerId + " : send interested message to " + neighborId);
 
          peer.neighborIInterested.put(neighborId, true);
@@ -386,8 +391,9 @@ private static Lock lock = new ReentrantLock();
 
             /*conver object message to byte array*/
            // byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
+            Utilities util = new Utilities();
+            util.sendMessage(out, interestedMsg.message);
 
-            sendMessage(out, interestedMsg.message);
             System.out.println("Peer " + myId + ": Interested message is send to " + neighborId);
 
             peer.neighborIInterested.put(neighborId, true);
@@ -401,8 +407,8 @@ private static Lock lock = new ReentrantLock();
 
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
-
-          sendMessage(out, notInterestedMsg.message);
+          Utilities util = new Utilities();
+          util.sendMessage(out, notInterestedMsg.message);
           System.out.println("Peer " + myId + ": not Interested message is send to " + neighborId);
 
           peer.neighborIInterested.put(neighborId, false);
@@ -430,7 +436,10 @@ private static Lock lock = new ReentrantLock();
 
         //byte[] pieceMsgByteArray = Utilities.combineByteArray(pieceMsg.msgLen, pieceMsg.msgType);//conver object message to byte array
         //pieceMsgByteArray = Utilities.combineByteArray(pieceMsgByteArray, pieceMsg.payload); //conver object message to byte array
-        sendMessage(out, pieceMsg.message);
+       synchronized(ReceiveHandler.class){
+        Utilities util = new Utilities();
+        util.sendMessage(out, pieceMsg.message);
+       }
         System.out.println("Peer " + peer.peerId + ": Piece message is send to " + neighborId);  
     }
     catch(Exception e){
@@ -524,8 +533,8 @@ private static Lock lock = new ReentrantLock();
 
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
-
-          sendMessage(out, notInterestedMsg.message);
+          Utilities util = new Utilities();
+          util.sendMessage(out, notInterestedMsg.message);
 
           peer.neighborIInterested.put(neighborId, false);
           System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId + "!!!!!!!!!!");
@@ -550,10 +559,10 @@ private static Lock lock = new ReentrantLock();
 
                     /*set a start time before send data*/
               startDownloadTime = System.currentTimeMillis();
+              Utilities util = new Utilities();
+              util.sendMessage(out, requestMsg.message);
 
-              sendMessage(out, requestMsg.message);
-
-              Utilities.threadSleep(10);
+              Utilities.threadSleep(50);
               System.out.println("neighborId: " + neighborId + ": desireed index: " + desiredIndex);
               System.out.println("Peer:" + peer.peerId + ": send request message to " + neighborId);
           }

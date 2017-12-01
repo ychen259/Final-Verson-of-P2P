@@ -109,7 +109,6 @@ public class SocketHandler implements Runnable {
         }
       }
       Utilities.threadSleep(2000);
-      System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + UnchokingInterval);
       executor.scheduleAtFixedRate(new preferredNeighbor(this, peer, allOutStream), 0, UnchokingInterval, TimeUnit.SECONDS);
       executor.scheduleAtFixedRate(new OptimisticalNeighbor(this, peer, allOutStream), 0, OptimisticUnchokingInterval, TimeUnit.SECONDS);
     }

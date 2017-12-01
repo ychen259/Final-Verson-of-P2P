@@ -249,12 +249,9 @@ static public void writeToFile(String filename, String context){
   static  public void sendMessage(DataOutputStream outstream, byte[] msg){
     //synchronized(ReceiveHandler.class){
       try{
-      
-        System.out.println("Start to send .........");
         //stream write the message
         outstream.write(msg);
         outstream.flush();
-        System.out.println("Finish to send .........");
       }
     
       catch(IOException ioException){

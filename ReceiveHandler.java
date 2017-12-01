@@ -48,7 +48,6 @@ public class ReceiveHandler implements Runnable {
   }*/
 
   public  void sendMessageToAll(byte[] msg){
-        System.out.println("Try to send have message in broadcast");
         for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
             DataOutputStream outstream = entry.getValue();
           //  synchronized(StartRemotePeers.class){
@@ -165,7 +164,6 @@ public class ReceiveHandler implements Runnable {
             Utilities.threadSleep(1000);      
           try{
               if(in.available() == 0) {
-                          System.out.println("end of for loop~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 peer.finish =true;
                 closeConnection(allOutStream, allInputStream, peer.neighborSocket);
                 /*for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
@@ -309,8 +307,6 @@ public class ReceiveHandler implements Runnable {
         byte[] msgId = Arrays.copyOfRange(message, 28, 32); /* copy index from 28 to 32 (not include 32)*/
         int msgIdInInt = Utilities.ByteArrayToint(msgId); /*convert byte array to int*/
                 
-        //System.out.println("Msg ID: " +  msgIdInInt + "  Except value is : " + neighborId);
-                
         /*check whether the handshake header is right and the peer ID is the expected one. */
         if("P2PFILESHARINGPROJ".equals(msgHeaderInString) && msgIdInInt == neighborId){
             System.out.println("peer " + peer.peerId + " correctly receive handshake message from " + neighborId);
@@ -328,7 +324,6 @@ public class ReceiveHandler implements Runnable {
      //   bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsgByteArray, bitfieldMsg.payload);
         //synchronized(StartRemotePeers.class){
           Utilities util = new Utilities();
-          System.out.println("Try to Bitfield have message");
           util.sendMessage(out, bitfieldMsg.message);
        // }
           
@@ -367,11 +362,9 @@ public class ReceiveHandler implements Runnable {
        myBitfieldMap = peer.bitfieldMap.get(peer.peerId);
        numberOfPiece = peer.numberOfPiece;
     //}
-System.out.println("bitfield before send request message111111 " + neighborId);
-Utilities.printByteArray(myBitfieldMap);
+
     //boolean completeFile = Utilities.checkForCompelteFile(myBitfieldMap, numberOfPiece);
     if(peer.numberOfPieceIhave == numberOfPiece){
-      System.out.println("COMPLETE FILE");
           /*send an not interesting message*/
           message notInterestedMsg = (new message()).notInterested();
 
@@ -379,7 +372,6 @@ Utilities.printByteArray(myBitfieldMap);
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
           //synchronized(StartRemotePeers.class){
             Utilities util = new Utilities();
-            System.out.println("Try to send not interested messag");
             util.sendMessage(out, notInterestedMsg.message);
          // }
 
@@ -389,20 +381,15 @@ Utilities.printByteArray(myBitfieldMap);
         
 
     }
-    else{
-         System.out.println("bitfield before send request message22222222222222222  " + neighborId);
-Utilities.printByteArray(myBitfieldMap);     
+    else{   
         int desiredIndex;
         synchronized(StartRemotePeers.class){
 
           desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
-                             System.out.println("bitfield before send request message333333333" + neighborId);
-Utilities.printByteArray(myBitfieldMap);
-                  System.out.println("------------------------------------------------------------");
+
           if(desiredIndex == -1) return; 
         }
         /***send the request message to neighbor***/
-                      System.out.println("neighborId: " + neighborId + ": desireed index: " + desiredIndex);
         message requestMsg = (new message()).request(desiredIndex); /*create a message object*/
         //byte[] requestMsgByteArray = Utilities.combineByteArray(requestMsg.msgLen, requestMsg.msgType);//conver object message to byte array
        // requestMsgByteArray = Utilities.combineByteArray(requestMsgByteArray, requestMsg.payload); //conver object message to byte array
@@ -411,7 +398,6 @@ Utilities.printByteArray(myBitfieldMap);
         startDownloadTime = System.currentTimeMillis();
        // synchronized(StartRemotePeers.class){
           Utilities util = new Utilities();
-          System.out.println("Try to send request message");
           util.sendMessage(out, requestMsg.message);
         //}
 
@@ -425,19 +411,15 @@ Utilities.printByteArray(myBitfieldMap);
   }
 
   public synchronized int getDesiredIndex(byte [] myBitfieldMap, byte [] neighborBitfieldMap){
-    System.out.println("1111111111111111111111111111111111111111111111111");
    // synchronized(StartRemotePeers.class){
       /****Get random interesting piece from neighbor ****/
       int desiredIndex;
       Random rand = new Random();
-System.out.println("Inside of getdesired index function");
 
       boolean noDesiredIndex = Arrays.equals(myBitfieldMap, neighborBitfieldMap);
 
-  System.out.println("22222222222222222222222222222222222222222222222222222");
       if(noDesiredIndex) return -1;
-System.out.println("step 1");
-Utilities.printByteArray(myBitfieldMap);
+
       boolean hasInterestingPiece = false;
       int numberOfPiece = peer.numberOfPiece;
         for(int i = 0 ; i < numberOfPiece; i++){
@@ -448,36 +430,20 @@ Utilities.printByteArray(myBitfieldMap);
           }
         }
       if(hasInterestingPiece == false){ 
-        System.out.println("my bitfield map");
-Utilities.printByteArray(myBitfieldMap);
-        System.out.println("neighbor bitfield map");
-Utilities.printByteArray(neighborBitfieldMap);
-        System.out.println("requested bitfield map");
-Utilities.printByteArray(peer.requestedBitfield);
-        return -1;}
+        return -1;
+      }
 
       while(true){
 
-        System.out.println("33333333333333333333333333333333333333333333333333333");
         desiredIndex = rand.nextInt(peer.numberOfPiece); /*generate random number from 0 to (numberOfPiece-1)*/
-              System.out.println("step 2");
-    Utilities.printByteArray(myBitfieldMap);
         /*Break out the loop until find a valid index*/
         if(Utilities.isSetBitInBitfield(myBitfieldMap, desiredIndex) == false && 
           Utilities.isSetBitInBitfield(neighborBitfieldMap, desiredIndex) == true){
-             // synchronized(this){
-                        System.out.println("step 3");
-Utilities.printByteArray(myBitfieldMap);
-
-                            System.out.println("step 4");
-    Utilities.printByteArray(myBitfieldMap);
                 break;
-              //}
         }
 
       }
-      System.out.println("step 5");
-    Utilities.printByteArray(myBitfieldMap);
+
       return desiredIndex;
     //}
   }
@@ -526,7 +492,7 @@ Utilities.printByteArray(myBitfieldMap);
 
         byte [] neighborBitfieldMap = peer.bitfieldMap.get(neighborId); /*get bitfield from hash table*/
         Utilities.setBitInBitfield(neighborBitfieldMap, indexOfPiece); /*update bitfield*/
-System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
+
         peer.bitfieldMap.put(neighborId, neighborBitfieldMap); /*Store the bitfield back to hashmap*/
 
        }
@@ -540,7 +506,6 @@ System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
          //byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
          //synchronized(StartRemotePeers.class){
            Utilities util = new Utilities();
-           System.out.println("Try to send interested messag");
            util.sendMessage(out, interestedMsg.message);
         // }
 
@@ -585,7 +550,6 @@ System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
            // byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
            // synchronized(StartRemotePeers.class){
               Utilities util = new Utilities();
-              System.out.println("Try to send interested messag");
               util.sendMessage(out, interestedMsg.message);
            // }
 
@@ -604,7 +568,6 @@ System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
         //  synchronized(StartRemotePeers.class){
             Utilities util = new Utilities();
-            System.out.println("Try to send not interested messag");
             util.sendMessage(out, notInterestedMsg.message);
          // }
 
@@ -639,7 +602,6 @@ System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
          //boolean neighborIsChoke = peer.neighborIChoke.get(neighborId);
          //if (neighborIsChoke == false){
            Utilities util = new Utilities();
-           System.out.println("Try to send piece messag");
            util.sendMessage(out, pieceMsg.message);
          //}
       // }
@@ -659,15 +621,12 @@ System.out.println("IGNORE IGNORE IGNORE " + indexOfPiece);
        Utilities.writeToFile(filename, context);
        }*/
        //Utilities.threadSleep(50);
-System.out.println("=========================== ++ " + indexOfPiece);
 
         byte [] myBitfieldMap = peer.bitfieldMap.get(peerId); /*get bitfield from hash table*/
-System.out.println("Before: ");  
-Utilities.printByteArray(myBitfieldMap);
+
         Utilities.setBitInBitfield(myBitfieldMap, indexOfPiece); /*update bitfield*/
         peer.bitfieldMap.put(peerId, myBitfieldMap); /*Store the bitfield back to hashmap*/
-System.out.println("After: ");
-Utilities.printByteArray(myBitfieldMap);    
+ 
         return  myBitfieldMap;
   }
 
@@ -683,7 +642,7 @@ Utilities.printByteArray(myBitfieldMap);
         byte [] piece = Arrays.copyOfRange(playload, 4, length); // Copy rest byte to piece
                     
         int indexOfPiece = Utilities.ByteArrayToint(indexOfPieceByteArray);
-System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!++ " + indexOfPiece);
+
         byte [] myBitfieldMap;
         myBitfieldMap = peer.bitfieldMap.get(peer.peerId);
 
@@ -735,10 +694,8 @@ System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
               break;
           }
         }
-System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
+
         if(hasInterestingPiece == false){
-          System.out.println("my bitfield before send not interested");
-Utilities.printByteArray(myBitfieldMap);
             /*send an not interesting message*/
           message notInterestedMsg = (new message()).notInterested();
 
@@ -746,17 +703,14 @@ Utilities.printByteArray(myBitfieldMap);
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
          // synchronized(SocketHandler.class){
             Utilities util = new Utilities();
-            System.out.println("Try to send not interested messag");
             util.sendMessage(out, notInterestedMsg.message);
           
-System.out.println("neighbor bitfield before send not interested");
-Utilities.printByteArray(neighborBitfieldMap);
+
             peer.neighborIInterested.put(neighborId, false);
-            System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId + "!!!!!!!!!!");
+            System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId);
           //}
         }
         else{
-System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
           /*If I am not choked by neighbor, request more pieces, send a request message*/
           boolean isChokeByNeighbor;
 
@@ -765,17 +719,11 @@ System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
 
           if(isChokeByNeighbor == false){
               /****Get random interesting piece from neighbor ****/
-              System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSs");
               int desiredIndex;
               synchronized(StartRemotePeers.class){
                 desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
                 if(desiredIndex == -1){
-                                System.out.println("My bitfield MAP");
-                Utilities.printByteArray(myBitfieldMap);
-                System.out.println("Neighbor bitfield MAP");
-                 Utilities.printByteArray(neighborBitfieldMap);
                 return;
-
                 } 
               }
               isChokeByNeighbor = peer.isChoke.get(neighborId);
@@ -793,12 +741,10 @@ System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
               startDownloadTime = System.currentTimeMillis();
             //  synchronized(SocketHandler.class){
                 Utilities util = new Utilities();
-                System.out.println("Try to send request messag");
                 util.sendMessage(out, requestMsg.message);
           //    }
 
               Utilities.threadSleep(50);
-              System.out.println("neighborId: " + neighborId + ": desireed index: " + desiredIndex);
               System.out.println("Peer:" + peer.peerId + ": send request message to " + neighborId);
           }
         }
@@ -824,7 +770,7 @@ System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
                   out.flush();
             	}
             	catch(Exception e){
-            		System.out.println("11111111111111111" + e);
+            		System.out.println(e);
             	}
 
             }

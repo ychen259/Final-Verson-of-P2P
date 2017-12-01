@@ -246,36 +246,22 @@ static public void writeToFile(String filename, String context){
     System.out.println();
   }
 
-  public void sendMessage(DataOutputStream outstream, byte[] msg){
-    //synchronized(Utilities.class){
+  static synchronized public void sendMessage(DataOutputStream outstream, byte[] msg){
+    //synchronized(ReceiveHandler.class){
+      try{
       
         System.out.println("Start to send .........");
         //stream write the message
-        Thread sendMsg = new Thread(new send(outstream, msg));
-        sendMsg.start();
-        System.out.println("Finish to send .........");
-   // }
-  }
-
- class send implements Runnable{
-     DataOutputStream outstream;
-     byte[] msg;
-
-    send(DataOutputStream outstream, byte[] msg){
-      this.outstream = outstream;
-      this.msg = msg;
-    }
-
-    public void run(){
-        try{
         outstream.write(msg);
         outstream.flush();
+        System.out.println("Finish to send .........");
       }
+    
       catch(IOException ioException){
         ioException.printStackTrace();
       }
     }
-  }
+  //} 
   
 
 }  

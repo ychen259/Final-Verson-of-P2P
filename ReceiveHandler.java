@@ -48,11 +48,13 @@ public class ReceiveHandler implements Runnable {
   }*/
 
   public synchronized void sendMessageToAll(byte[] msg){
-
+        System.out.println("Try to send have message in broadcast");
         for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
             DataOutputStream outstream = entry.getValue();
+            synchronized(StartRemotePeers.class){
              Utilities util = new Utilities();
              util.sendMessage(outstream, msg);
+            }
 
         }
   }
@@ -81,7 +83,7 @@ public class ReceiveHandler implements Runnable {
 
             /*Handle handshake message*/
             if(msgType[0] == flagForHandshake){
-          	  handleHandshakeMessage(lengthOfMessage, msgType);    
+          	  handleHandshakeMessage(lengthOfMessage, msgType); 
             }
             /*Handle Actual message*/
             else{
@@ -94,40 +96,49 @@ public class ReceiveHandler implements Runnable {
                 /*request = 6*/
                 /*piece = 7*/
                 if(msgType[0] == 0){
-                  handleChokeMessage();
+                  Thread chokeThread = new Thread(new ChokeMsgThread());
+                  chokeThread.start();
                 }
                 else if(msgType[0] == 1){
-                  handleUnchokeMessage();
+                  Thread unchokeThread = new Thread(new UnchokeMsgThread());
+                  unchokeThread.start();
                 }
                 else if(msgType[0] == 2){
-                  handleInterestedMessage();
+                  Thread interestedThread = new Thread(new InterestedMsgThread());
+                  interestedThread.start();
                 }
                 else if(msgType[0] == 3){
-                  handleNotInterestedMessage();    
+                  Thread notinterestedThread = new Thread(new NotInterestedMsgThread());
+                  notinterestedThread.start();   
                 }
                 else if(msgType[0] == 4){
                   byte [] playload = new byte[length-1];
                   in.readFully(playload, 0, playload.length);
 
-                  handleHaveMessage(playload);
+                  Thread haveThread = new Thread(new HaveMsgThread(playload));
+                  haveThread.start();
                 }
                 else if(msgType[0] == 5){
                   byte [] playload = new byte[length-1];
                   in.readFully(playload, 0, playload.length);
 
-                  handleBitfieldMessage(playload);
+                  Thread bitfieldThread = new Thread(new BitfieldMsgThread(playload));
+                  bitfieldThread.start();
+
                 }
                 else if(msgType[0] == 6){
                   byte [] playload = new byte[length-1];
                   in.readFully(playload, 0, playload.length);
 
-                  handleRequestMessage(playload);
+                  Thread requestThread = new Thread(new RequestMsgThread(playload));
+                  requestThread.start();
                 }
                 else if(msgType[0] == 7){
                   byte [] playload = new byte[length-1];
                   in.readFully(playload, 0, playload.length);
 
-                  handlePieceMessage(playload);
+                  Thread pieceThread = new Thread(new PieceMsgThread(playload));
+                  pieceThread.start();
                 }
             }
 
@@ -139,19 +150,22 @@ public class ReceiveHandler implements Runnable {
 
           int numberOfPiece = peer.numberOfPiece;
           int numOfPeerHaveCompleteFile = 0;
-          for(Map.Entry<Integer,byte[]> entry : peer.bitfieldMap.entrySet()){
-            if(Utilities.checkForCompelteFile(entry.getValue(), numberOfPiece))
-            numOfPeerHaveCompleteFile++;
-          }
 
+          synchronized(StartRemotePeers.class){
+            for(Map.Entry<Integer,byte[]> entry : peer.bitfieldMap.entrySet()){
+              if(Utilities.checkForCompelteFile(entry.getValue(), numberOfPiece))
+              numOfPeerHaveCompleteFile++;
+            }
+          }
           int numberOfPeer = peer.numberOfPeer;
 
           /*When everyone has complete file, and not input from inputstream, stop the system*/
          if(numOfPeerHaveCompleteFile == numberOfPeer){
-            Utilities.threadSleep(4000);      
+            Utilities.threadSleep(2000);      
           try{
               if(in.available() == 0) {
                           System.out.println("end of for loop~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                peer.finish =true;
                 for(Map.Entry<Integer,DataOutputStream> entry : allOutStream.entrySet()){
                   DataOutputStream outputStream = entry.getValue();
                   outputStream.close();
@@ -166,7 +180,7 @@ public class ReceiveHandler implements Runnable {
                   Socket socket = entry.getValue();
                   socket.close();
                 }
-
+                Utilities.threadSleep(4000);
                 System.exit(0);
               }
           }catch(IOException e){
@@ -177,7 +191,86 @@ public class ReceiveHandler implements Runnable {
     }
   }
 
-  public void handleHandshakeMessage(byte[] lengthOfMessage, byte[] msgType){
+  class ChokeMsgThread implements Runnable{
+    public void run(){
+      synchronized(SocketHandler.class){
+      handleChokeMessage();}
+    }
+  }
+
+  class UnchokeMsgThread implements Runnable{
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleUnchokeMessage();}
+    }
+  }
+
+  class InterestedMsgThread implements Runnable{
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleInterestedMessage();}
+    }
+  }
+
+  class NotInterestedMsgThread implements Runnable{
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleNotInterestedMessage();}
+    }
+  }
+  class HaveMsgThread implements Runnable{
+    byte [] playload;
+
+    HaveMsgThread(byte [] playload){
+      this.playload = playload;
+    }
+
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleHaveMessage(playload);}
+    }
+  }
+
+  class BitfieldMsgThread implements Runnable{
+    byte [] playload;
+
+    BitfieldMsgThread(byte [] playload){
+      this.playload = playload;
+    }
+
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleBitfieldMessage(playload);}
+    }
+  }
+
+  class RequestMsgThread implements Runnable{
+    byte [] playload;
+
+    RequestMsgThread(byte [] playload){
+      this.playload = playload;
+    }
+
+    public void run(){
+            synchronized(SocketHandler.class){
+      handleRequestMessage(playload);}
+    }
+  }
+
+  class PieceMsgThread implements Runnable{
+    byte [] playload;
+
+    PieceMsgThread(byte [] playload){
+      this.playload = playload;
+    }
+
+    public void run(){
+            synchronized(SocketHandler.class){
+      handlePieceMessage(playload);}
+    }
+  }
+
+  public synchronized void handleHandshakeMessage(byte[] lengthOfMessage, byte[] msgType){
     try{
         System.out.println("Peer " + peer.peerId + ": receive handshake message from " + neighborId); 
         byte [] restByte = new byte[27];
@@ -213,8 +306,11 @@ public class ReceiveHandler implements Runnable {
         /*conver object message to byte array*/
    //     byte[] bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsg.msgLen, bitfieldMsg.msgType);
      //   bitfieldMsgByteArray = Utilities.combineByteArray(bitfieldMsgByteArray, bitfieldMsg.payload);
-        Utilities util = new Utilities();
-        util.sendMessage(out, bitfieldMsg.message);
+        synchronized(StartRemotePeers.class){
+          Utilities util = new Utilities();
+          System.out.println("Try to Bitfield have message");
+          util.sendMessage(out, bitfieldMsg.message);
+        }
           
         System.out.println("Peer " + peer.peerId + ": Bitfield message is sent to " + neighborId);
     }catch(Exception e){
@@ -233,7 +329,7 @@ public class ReceiveHandler implements Runnable {
       Utilities.writeToFile(filename, context);
   }
 
-  public  synchronized void handleUnchokeMessage(){
+  public synchronized void handleUnchokeMessage(){
     System.out.println("Peer " + peer.peerId + ": receive unchoke message from " + neighborId);
     peer.isChoke.put(neighborId, false);
 
@@ -250,9 +346,16 @@ public class ReceiveHandler implements Runnable {
       System.out.println("COMPLETE FILE");
     }
     else{
-        int desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
+System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
-        if(desiredIndex == -1) return; 
+        System.out.println("------------------------------------------------------------");
+        int desiredIndex;
+        synchronized(StartRemotePeers.class){
+          desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
+                  System.out.println("------------------------------------------------------------");
+          if(desiredIndex == -1) return; 
+        }
+System.out.println("!!!!!!!!!!!!!!!!!@@@@@@@@@@@@@@@@@@@####################$$$$$$$$$$$$");
         /***send the request message to neighbor***/
         message requestMsg = (new message()).request(desiredIndex); /*create a message object*/
         //byte[] requestMsgByteArray = Utilities.combineByteArray(requestMsg.msgLen, requestMsg.msgType);//conver object message to byte array
@@ -260,8 +363,11 @@ public class ReceiveHandler implements Runnable {
 
                 /*set a start time before send data*/
         startDownloadTime = System.currentTimeMillis();
-        Utilities util = new Utilities();
-        util.sendMessage(out, requestMsg.message);
+        synchronized(StartRemotePeers.class){
+          Utilities util = new Utilities();
+          System.out.println("Try to send request message");
+          util.sendMessage(out, requestMsg.message);
+        }
 
         Utilities.threadSleep(10);
         /*set requestedBitfield after send request message to advoid request same piece from different neighbor*/
@@ -274,34 +380,49 @@ public class ReceiveHandler implements Runnable {
   }
 
   public synchronized int getDesiredIndex(byte [] myBitfieldMap, byte [] neighborBitfieldMap){
+    System.out.println("1111111111111111111111111111111111111111111111111");
+    synchronized(StartRemotePeers.class){
+      /****Get random interesting piece from neighbor ****/
+      int desiredIndex;
+      Random rand = new Random();
 
-    lock.lock();
-    /****Get random interesting piece from neighbor ****/
-    int desiredIndex;
-    Random rand = new Random();
+      boolean noDesiredIndex = Arrays.equals(myBitfieldMap, neighborBitfieldMap);
 
-    boolean noDesiredIndex = Arrays.equals(myBitfieldMap, neighborBitfieldMap);
-  
-    if(noDesiredIndex) return -1;
 
-    while(true){
-      desiredIndex = rand.nextInt(peer.numberOfPiece); /*generate random number from 0 to (numberOfPiece-1)*/
+  System.out.println("22222222222222222222222222222222222222222222222222222");
+      if(noDesiredIndex) return -1;
 
-      /*Break out the loop until find a valid index*/
-      if(Utilities.isSetBitInBitfield(myBitfieldMap, desiredIndex) == false && 
-        Utilities.isSetBitInBitfield(neighborBitfieldMap, desiredIndex) == true && 
-        Utilities.isSetBitInBitfield(peer.requestedBitfield, desiredIndex) == false){
-           // synchronized(this){
-              Utilities.setBitInBitfield(peer.requestedBitfield, desiredIndex);
+      boolean hasInterestingPiece = false;
+      int numberOfPiece = peer.numberOfPiece;
+        for(int i = 0 ; i < numberOfPiece; i++){
+          if(Utilities.isSetBitInBitfield(myBitfieldMap, i) == false && Utilities.isSetBitInBitfield(neighborBitfieldMap, i) == true
+            && Utilities.isSetBitInBitfield(peer.requestedBitfield, i) == false){
+              hasInterestingPiece = true;
               break;
-            //}
+          }
+        }
+      if(hasInterestingPiece == false) return -1;
+
+      while(true){
+        System.out.println("33333333333333333333333333333333333333333333333333333");
+        desiredIndex = rand.nextInt(peer.numberOfPiece); /*generate random number from 0 to (numberOfPiece-1)*/
+
+        /*Break out the loop until find a valid index*/
+        if(Utilities.isSetBitInBitfield(myBitfieldMap, desiredIndex) == false && 
+          Utilities.isSetBitInBitfield(neighborBitfieldMap, desiredIndex) == true && 
+          Utilities.isSetBitInBitfield(peer.requestedBitfield, desiredIndex) == false){
+             // synchronized(this){
+                Utilities.setBitInBitfield(peer.requestedBitfield, desiredIndex);
+                break;
+              //}
+        }
       }
+    
+      return desiredIndex;
     }
-    lock.unlock();
-    return desiredIndex;
   }
 
-  public void handleInterestedMessage(){
+  public synchronized void handleInterestedMessage(){
     System.out.println("Peer " + peer.peerId + ": receive interested message from " + neighborId);
 
     String filename = "./peer_" + peer.peerId + "/log_peer_" + peer.peerId + ".log";
@@ -309,12 +430,12 @@ public class ReceiveHandler implements Runnable {
     Utilities.writeToFile(filename, context);
 
     /*If receive interested message, then change the isInterested talbe*/
-    synchronized(this){
+    synchronized(StartRemotePeers.class){
       peer.isInterested.put(neighborId, true);
     }
   }
 
-  public void handleNotInterestedMessage(){
+  public synchronized void handleNotInterestedMessage(){
     System.out.println("Peer " + peer.peerId + ": receive not Interested message from " + neighborId);
 
     String filename = "./peer_" + peer.peerId + "/log_peer_" + peer.peerId + ".log";
@@ -322,7 +443,7 @@ public class ReceiveHandler implements Runnable {
     Utilities.writeToFile(filename, context);
 
     /*If receive interested message, then change the isInterested talbe*/
-    synchronized(this){
+    synchronized(StartRemotePeers.class){
       peer.isInterested.put(neighborId, false);  
     }
   }  
@@ -349,8 +470,11 @@ public class ReceiveHandler implements Runnable {
 
          /*conver object message to byte array*/
          //byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
-         Utilities util = new Utilities();
-         util.sendMessage(out, interestedMsg.message);
+         synchronized(StartRemotePeers.class){
+           Utilities util = new Utilities();
+           System.out.println("Try to send interested messag");
+           util.sendMessage(out, interestedMsg.message);
+         }
 
 
          System.out.println("Peer " + peer.peerId + " : send interested message to " + neighborId);
@@ -368,7 +492,7 @@ public class ReceiveHandler implements Runnable {
 
         /*receive bitfield and update the bitfield of my neighbor*/
         /*playload inside of message is bitmap of its neighbor*/
-        synchronized(this){
+        synchronized(StartRemotePeers.class){
           peer.bitfieldMap.put(neighborId, playload);
         }
 
@@ -391,8 +515,11 @@ public class ReceiveHandler implements Runnable {
 
             /*conver object message to byte array*/
            // byte[] interestedMsgByteArray = Utilities.combineByteArray(interestedMsg.msgLen, interestedMsg.msgType);
-            Utilities util = new Utilities();
-            util.sendMessage(out, interestedMsg.message);
+            synchronized(StartRemotePeers.class){
+              Utilities util = new Utilities();
+              System.out.println("Try to send interested messag");
+              util.sendMessage(out, interestedMsg.message);
+            }
 
             System.out.println("Peer " + myId + ": Interested message is send to " + neighborId);
 
@@ -407,8 +534,12 @@ public class ReceiveHandler implements Runnable {
 
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
-          Utilities util = new Utilities();
-          util.sendMessage(out, notInterestedMsg.message);
+          synchronized(StartRemotePeers.class){
+            Utilities util = new Utilities();
+            System.out.println("Try to send not interested messag");
+            util.sendMessage(out, notInterestedMsg.message);
+          }
+
           System.out.println("Peer " + myId + ": not Interested message is send to " + neighborId);
 
           peer.neighborIInterested.put(neighborId, false);
@@ -436,10 +567,15 @@ public class ReceiveHandler implements Runnable {
 
         //byte[] pieceMsgByteArray = Utilities.combineByteArray(pieceMsg.msgLen, pieceMsg.msgType);//conver object message to byte array
         //pieceMsgByteArray = Utilities.combineByteArray(pieceMsgByteArray, pieceMsg.payload); //conver object message to byte array
-       synchronized(ReceiveHandler.class){
-        Utilities util = new Utilities();
-        util.sendMessage(out, pieceMsg.message);
+       synchronized(StartRemotePeers.class){
+         boolean neighborIsChoke = peer.neighborIChoke.get(neighborId);
+         if (neighborIsChoke == false){
+           Utilities util = new Utilities();
+           System.out.println("Try to send piece messag");
+           util.sendMessage(out, pieceMsg.message);
+         }
        }
+       
         System.out.println("Peer " + peer.peerId + ": Piece message is send to " + neighborId);  
     }
     catch(Exception e){
@@ -488,7 +624,7 @@ public class ReceiveHandler implements Runnable {
         stopDownloadTime = System.currentTimeMillis();
         double downloadRate = piece.length / (double)(stopDownloadTime - startDownloadTime);
 
-        synchronized(this){
+        synchronized(StartRemotePeers.class){
           peer.downloadRate.put(neighborId, downloadRate);
         }
 
@@ -499,7 +635,7 @@ public class ReceiveHandler implements Runnable {
         byte [] myBitfieldMap;
         boolean completeFile = false;
 
-        synchronized(this){
+        synchronized(StartRemotePeers.class){
           myBitfieldMap = updateBitfield(peer.peerId, indexOfPiece);
 
           //completeFile = Utilities.checkForCompelteFile(myBitfieldMap, numberOfPiece);
@@ -520,7 +656,8 @@ public class ReceiveHandler implements Runnable {
         boolean hasInterestingPiece = false;
         byte [] neighborBitfieldMap = peer.bitfieldMap.get(neighborId);
         for(int i = 0 ; i < numberOfPiece; i++){
-          if(Utilities.isSetBitInBitfield(myBitfieldMap, i) == false && Utilities.isSetBitInBitfield(neighborBitfieldMap, i) == true){
+          if(Utilities.isSetBitInBitfield(myBitfieldMap, i) == false && Utilities.isSetBitInBitfield(neighborBitfieldMap, i) == true
+            && Utilities.isSetBitInBitfield(peer.requestedBitfield, i) == false){
               hasInterestingPiece = true;
               break;
           }
@@ -533,21 +670,32 @@ public class ReceiveHandler implements Runnable {
 
           /*conver object message to byte array*/
           //byte[] notInterestedMsgByteArray = Utilities.combineByteArray(notInterestedMsg.msgLen, notInterestedMsg.msgType);
-          Utilities util = new Utilities();
-          util.sendMessage(out, notInterestedMsg.message);
+          synchronized(StartRemotePeers.class){
+            Utilities util = new Utilities();
+            System.out.println("Try to send not interested messag");
+            util.sendMessage(out, notInterestedMsg.message);
+          
 
-          peer.neighborIInterested.put(neighborId, false);
-          System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId + "!!!!!!!!!!");
+            peer.neighborIInterested.put(neighborId, false);
+            System.out.println("Peer " + peer.peerId + ": not Interested message is send to " + neighborId + "!!!!!!!!!!");
+          }
         }
         else{
 
           /*If I am not choked by neighbor, request more pieces, send a request message*/
-          boolean isChokeByNeighbor = peer.isChoke.get(neighborId);
+          boolean isChokeByNeighbor;
+          synchronized(StartRemotePeers.class){
+           isChokeByNeighbor = peer.isChoke.get(neighborId);
+          }
 
           if(isChokeByNeighbor == false){
               /****Get random interesting piece from neighbor ****/
-              int desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
-              if(desiredIndex == -1) return;
+              int desiredIndex;
+              synchronized(StartRemotePeers.class){
+                desiredIndex = getDesiredIndex(myBitfieldMap, neighborBitfieldMap);
+                if(desiredIndex == -1) return;
+
+              }
 
               /*set requestedBitfield after send request message to advoid request same piece from different neighbor*/
               //Utilities.setBitInBitfield(peer.requestedBitfield, desiredIndex);
@@ -559,8 +707,11 @@ public class ReceiveHandler implements Runnable {
 
                     /*set a start time before send data*/
               startDownloadTime = System.currentTimeMillis();
-              Utilities util = new Utilities();
-              util.sendMessage(out, requestMsg.message);
+              synchronized(StartRemotePeers.class){
+                Utilities util = new Utilities();
+                System.out.println("Try to send request messag");
+                util.sendMessage(out, requestMsg.message);
+              }
 
               Utilities.threadSleep(50);
               System.out.println("neighborId: " + neighborId + ": desireed index: " + desiredIndex);

@@ -40,9 +40,9 @@ public class preferredNeighbor implements Runnable {
 
     public void run(){
 
-        /*if(peer.finish){
+        if(peer.finish){
           System.exit(0);
-        }*/
+        }
 
         /*sort the download map*/
         /*sort the download rate from high to low*/
@@ -93,6 +93,7 @@ public class preferredNeighbor implements Runnable {
 
                 numberOfNeighborIsPick++;
                 if(numberOfNeighborIsPick > NumberOfPreferredNeighbors){
+                    if(neighborIsChoke == true) continue;
                     if(neighborId == peer.optimistically_neighbor) continue;
                     
                     peer.neighborIChoke.put(neighborId, true);
@@ -108,6 +109,7 @@ public class preferredNeighbor implements Runnable {
                 }
                 else{
                   new_preferred_neighbors.add(neighborId);
+                  if(neighborId == peer.optimistically_neighbor) continue;
                   /*If neighbor is unchoke already, we do not have to send unchoke message*/
                   /*We just need to send request message*/
                   if(neighborIsChoke == false){

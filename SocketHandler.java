@@ -65,7 +65,7 @@ public class SocketHandler implements Runnable {
           Socket socket = peer.neighborSocket.get(neighborId); 
 
           DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
-          outputStream.flush();
+          //outputStream.flush();
           DataInputStream inputStream = new DataInputStream(socket.getInputStream());
           allInputStream.put(neighborId, inputStream);   
           allOutStream.put(neighborId, outputStream);
@@ -108,7 +108,8 @@ public class SocketHandler implements Runnable {
           System.out.println(e);
         }
       }
-      Utilities.threadSleep(1000);
+      Utilities.threadSleep(2000);
+      System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + UnchokingInterval);
       executor.scheduleAtFixedRate(new preferredNeighbor(this, peer, allOutStream), 0, UnchokingInterval, TimeUnit.SECONDS);
       executor.scheduleAtFixedRate(new OptimisticalNeighbor(this, peer, allOutStream), 0, OptimisticUnchokingInterval, TimeUnit.SECONDS);
     }

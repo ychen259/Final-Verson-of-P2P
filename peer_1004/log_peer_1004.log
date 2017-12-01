@@ -1,0 +1,1584 @@
+[01/12/17 01:52:01] Peer 1004 makes a connection to Peer 1000
+[01/12/17 01:52:01] Peer 1004 makes a connection to Peer 1001
+[01/12/17 01:52:01] Peer 1004 makes a connection to Peer 1002
+[01/12/17 01:52:01] Peer 1004 makes a connection to Peer 1003
+[01/12/17 01:52:01] Peer 1004 received the 'not interested' message from 1000
+[01/12/17 01:52:01] Peer 1004 received the 'not interested' message from 1001
+[01/12/17 01:52:01] Peer 1004 received the 'not interested' message from 1002
+[01/12/17 01:52:01] Peer 1004 received the 'not interested' message from 1003
+[01/12/17 01:52:04] Peer 1004 received the 'have' message from Peer 1001 for the piece 97
+[01/12/17 01:52:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 114
+[01/12/17 01:52:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 57
+[01/12/17 01:52:04] Peer 1004 received the 'have' message from Peer 1002 for the piece 204
+[01/12/17 01:52:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 183
+[01/12/17 01:52:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 177
+[01/12/17 01:52:05] Peer 1004 is unchoked by Peer 1002
+[01/12/17 01:52:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 247
+[01/12/17 01:52:06] Peer 1004 has downloaded the piece 183 from 1002
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 160
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 266
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 178
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 34
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 247
+[01/12/17 01:52:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 235
+[01/12/17 01:52:07] Peer 1004 is unchoked by Peer 1003
+[01/12/17 01:52:07] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:52:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 206
+[01/12/17 01:52:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 267
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 246
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 76
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 274
+[01/12/17 01:52:09] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:09] Peer 1004 is choked by Peer 1003
+[01/12/17 01:52:09] Peer 1004 is choked by Peer 1002
+[01/12/17 01:52:09] Peer 1004 is choked by Peer 1001
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1003 for the piece 45
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 265
+[01/12/17 01:52:09] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:09] Peer 1004 has downloaded the piece 247 from 1002
+[01/12/17 01:52:09] Peer 1004: has the preferred neighbors 1001, 1003
+[01/12/17 01:52:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 123
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 61
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 183
+[01/12/17 01:52:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 55
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 126
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 57
+[01/12/17 01:52:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 160
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 171
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 266
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 77
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 248
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 82
+[01/12/17 01:52:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 266
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 265
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 114
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 183
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1003 for the piece 47
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1003 for the piece 73
+[01/12/17 01:52:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 34
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 11
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 82
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 126
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 235
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 227
+[01/12/17 01:52:13] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:52:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 61
+[01/12/17 01:52:13] Peer 1004 is unchoked by Peer 1003
+[01/12/17 01:52:13] Peer 1004 has downloaded the piece 156 from 1000
+[01/12/17 01:52:14] Peer 1004 is unchoked by Peer 1002
+[01/12/17 01:52:14] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:52:14] Peer 1004 has downloaded the piece 233 from 1000
+[01/12/17 01:52:14] Peer 1004 received the 'have' message from Peer 1003 for the piece 32
+[01/12/17 01:52:14] Peer 1004 received the 'not interested' message from 1001
+[01/12/17 01:52:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 247
+[01/12/17 01:52:14] Peer 1004 received the 'have' message from Peer 1003 for the piece 178
+[01/12/17 01:52:14] Peer 1004 has downloaded the piece 194 from 1000
+[01/12/17 01:52:14] Peer 1004 received the 'have' message from Peer 1003 for the piece 230
+[01/12/17 01:52:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 59
+[01/12/17 01:52:14] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:15] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:15] Peer 1004 has downloaded the piece 228 from 1000
+[01/12/17 01:52:15] Peer 1004 has downloaded the piece 82 from 1003
+[01/12/17 01:52:16] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 270
+[01/12/17 01:52:16] Peer 1004 has downloaded the piece 32 from 1003
+[01/12/17 01:52:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 160
+[01/12/17 01:52:16] Peer 1004 received the 'have' message from Peer 1003 for the piece 269
+[01/12/17 01:52:16] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:16] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:16] Peer 1004 has downloaded the piece 13 from 1000
+[01/12/17 01:52:17] Peer 1004 has downloaded the piece 76 from 1001
+[01/12/17 01:52:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 76
+[01/12/17 01:52:17] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:17] Peer 1004 has downloaded the piece 267 from 1002
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1003 for the piece 193
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 274
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 267
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 82
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 12
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1003 for the piece 239
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:18] Peer 1004 received the 'have' message from Peer 1003 for the piece 109
+[01/12/17 01:52:18] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:18] Peer 1004 has downloaded the piece 73 from 1003
+[01/12/17 01:52:18] Peer 1004 has downloaded the piece 61 from 1000
+[01/12/17 01:52:19] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 230
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 265
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 283
+[01/12/17 01:52:19] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 76
+[01/12/17 01:52:19] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 278
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 190
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 206
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 161
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 44
+[01/12/17 01:52:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 170
+[01/12/17 01:52:19] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:19] Peer 1004 has downloaded the piece 93 from 1000
+[01/12/17 01:52:20] Peer 1004 has downloaded the piece 248 from 1003
+[01/12/17 01:52:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 97
+[01/12/17 01:52:21] Peer 1004 received the 'have' message from Peer 1003 for the piece 211
+[01/12/17 01:52:21] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:21] Peer 1004 has downloaded the piece 34 from 1001
+[01/12/17 01:52:21] Peer 1004 has downloaded the piece 114 from 1002
+[01/12/17 01:52:21] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:21] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:21] Peer 1004 received the 'have' message from Peer 1003 for the piece 221
+[01/12/17 01:52:21] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:52:21] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:52:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 43
+[01/12/17 01:52:21] Peer 1004 received the 'have' message from Peer 1003 for the piece 189
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 73
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 248
+[01/12/17 01:52:22] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:22] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 129
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 97
+[01/12/17 01:52:22] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:22] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:22] Peer 1004 has downloaded the piece 120 from 1000
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 227
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 32
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 206
+[01/12/17 01:52:22] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:22] Peer 1004 is choked by Peer 1001
+[01/12/17 01:52:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 177
+[01/12/17 01:52:22] Peer 1004 has downloaded the piece 270 from 1001
+[01/12/17 01:52:23] Peer 1004 has downloaded the piece 0 from 1000
+[01/12/17 01:52:23] Peer 1004 received the 'have' message from Peer 1003 for the piece 6
+[01/12/17 01:52:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 34
+[01/12/17 01:52:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 57
+[01/12/17 01:52:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 248
+[01/12/17 01:52:23] Peer 1004 has downloaded the piece 193 from 1003
+[01/12/17 01:52:23] Peer 1004: has the preferred neighbors 1001, 1003
+[01/12/17 01:52:23] Peer 1004 has the optimistically unchoke neighbor 1002
+[01/12/17 01:52:23] Peer 1004 has downloaded the piece 160 from 1001
+[01/12/17 01:52:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 126
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:24] Peer 1004 received the 'have' message from Peer 1003 for the piece 255
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:24] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:52:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 114
+[01/12/17 01:52:24] Peer 1004 is choked by Peer 1001
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:24] Peer 1004 has downloaded the piece 177 from 1002
+[01/12/17 01:52:24] Peer 1004 has downloaded the piece 209 from 1000
+[01/12/17 01:52:24] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:25] Peer 1004 has downloaded the piece 239 from 1003
+[01/12/17 01:52:25] Peer 1004 has downloaded the piece 129 from 1002
+[01/12/17 01:52:25] Peer 1004 has downloaded the piece 92 from 1000
+[01/12/17 01:52:25] Peer 1004: has the preferred neighbors 1002, 1003
+[01/12/17 01:52:25] Peer 1004 received the 'have' message from Peer 1002 for the piece 174
+[01/12/17 01:52:25] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:25] Peer 1004 received the 'have' message from Peer 1003 for the piece 161
+[01/12/17 01:52:25] Peer 1004 received the 'have' message from Peer 1003 for the piece 146
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1002 for the piece 128
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 120
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 42
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 234
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1002 for the piece 44
+[01/12/17 01:52:26] Peer 1004 is choked by Peer 1000
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 156
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 245
+[01/12/17 01:52:26] Peer 1004 has downloaded the piece 59 from 1001
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1002 for the piece 32
+[01/12/17 01:52:26] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 193
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 13
+[01/12/17 01:52:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 211
+[01/12/17 01:52:27] Peer 1004 received the 'have' message from Peer 1002 for the piece 270
+[01/12/17 01:52:27] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:27] Peer 1004 has downloaded the piece 190 from 1003
+[01/12/17 01:52:27] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:27] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:27] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:27] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:27] Peer 1004 received the 'have' message from Peer 1003 for the piece 65
+[01/12/17 01:52:27] Peer 1004 has downloaded the piece 204 from 1002
+[01/12/17 01:52:28] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:28] Peer 1004 received the 'have' message from Peer 1001 for the piece 55
+[01/12/17 01:52:28] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:28] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:28] Peer 1004 received the 'have' message from Peer 1001 for the piece 11
+[01/12/17 01:52:28] Peer 1004 received the 'have' message from Peer 1003 for the piece 51
+[01/12/17 01:52:28] Peer 1004 received the 'have' message from Peer 1002 for the piece 13
+[01/12/17 01:52:28] Peer 1004 has downloaded the piece 45 from 1003
+[01/12/17 01:52:29] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 246
+[01/12/17 01:52:29] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 152
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1001 for the piece 168
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1002 for the piece 60
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 37
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1002 for the piece 0
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 90
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1001 for the piece 278
+[01/12/17 01:52:29] Peer 1004 received the 'have' message from Peer 1002 for the piece 211
+[01/12/17 01:52:30] Peer 1004 has downloaded the piece 227 from 1003
+[01/12/17 01:52:30] Peer 1004 has downloaded the piece 44 from 1002
+[01/12/17 01:52:30] Peer 1004 received the 'have' message from Peer 1003 for the piece 224
+[01/12/17 01:52:30] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:30] Peer 1004 has downloaded the piece 221 from 1003
+[01/12/17 01:52:30] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:30] Peer 1004 received the 'have' message from Peer 1003 for the piece 200
+[01/12/17 01:52:30] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:30] Peer 1004 received the 'have' message from Peer 1003 for the piece 267
+[01/12/17 01:52:30] Peer 1004 received the 'have' message from Peer 1001 for the piece 67
+[01/12/17 01:52:30] Peer 1004 received the 'have' message from Peer 1003 for the piece 84
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1002 for the piece 189
+[01/12/17 01:52:31] Peer 1004 has downloaded the piece 278 from 1003
+[01/12/17 01:52:31] Peer 1004 has downloaded the piece 126 from 1003
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1002 for the piece 233
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1001 for the piece 149
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1003 for the piece 257
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1001 for the piece 129
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1003 for the piece 156
+[01/12/17 01:52:31] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:31] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:31] Peer 1004 received the 'have' message from Peer 1002 for the piece 65
+[01/12/17 01:52:32] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:32] Peer 1004 has downloaded the piece 90 from 1003
+[01/12/17 01:52:32] Peer 1004 received the 'have' message from Peer 1003 for the piece 31
+[01/12/17 01:52:32] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:32] Peer 1004 received the 'have' message from Peer 1001 for the piece 44
+[01/12/17 01:52:32] Peer 1004 received the 'have' message from Peer 1003 for the piece 39
+[01/12/17 01:52:32] Peer 1004 received the 'have' message from Peer 1002 for the piece 239
+[01/12/17 01:52:32] Peer 1004 has downloaded the piece 97 from 1002
+[01/12/17 01:52:33] Peer 1004 received the 'have' message from Peer 1001 for the piece 7
+[01/12/17 01:52:33] Peer 1004 received the 'have' message from Peer 1001 for the piece 190
+[01/12/17 01:52:33] Peer 1004 has downloaded the piece 200 from 1003
+[01/12/17 01:52:33] Peer 1004 received the 'have' message from Peer 1003 for the piece 12
+[01/12/17 01:52:33] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:52:33] Peer 1004 has the optimistically unchoke neighbor 1001
+[01/12/17 01:52:33] Peer 1004 has downloaded the piece 189 from 1003
+[01/12/17 01:52:33] Peer 1004 received the 'have' message from Peer 1001 for the piece 64
+[01/12/17 01:52:34] Peer 1004 received the 'have' message from Peer 1003 for the piece 167
+[01/12/17 01:52:34] Peer 1004 received the 'have' message from Peer 1002 for the piece 59
+[01/12/17 01:52:34] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:34] Peer 1004 received the 'have' message from Peer 1003 for the piece 149
+[01/12/17 01:52:34] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:34] Peer 1004 received the 'have' message from Peer 1002 for the piece 243
+[01/12/17 01:52:34] Peer 1004 has downloaded the piece 39 from 1000
+[01/12/17 01:52:34] Peer 1004 received the 'have' message from Peer 1003 for the piece 133
+[01/12/17 01:52:34] Peer 1004 has downloaded the piece 205 from 1000
+[01/12/17 01:52:35] Peer 1004 has downloaded the piece 235 from 1003
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1002 for the piece 81
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1001 for the piece 142
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1003 for the piece 168
+[01/12/17 01:52:35] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:35] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1001 for the piece 143
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1002 for the piece 120
+[01/12/17 01:52:35] Peer 1004 received the 'have' message from Peer 1003 for the piece 233
+[01/12/17 01:52:36] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:36] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:36] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:36] Peer 1004 has downloaded the piece 285 from 1000
+[01/12/17 01:52:36] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:36] Peer 1004 received the 'have' message from Peer 1003 for the piece 55
+[01/12/17 01:52:36] Peer 1004 has downloaded the piece 12 from 1000
+[01/12/17 01:52:36] Peer 1004 has downloaded the piece 149 from 1003
+[01/12/17 01:52:36] Peer 1004 received the 'have' message from Peer 1001 for the piece 224
+[01/12/17 01:52:36] Peer 1004 has downloaded the piece 170 from 1002
+[01/12/17 01:52:36] Peer 1004 received the 'have' message from Peer 1003 for the piece 243
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1002 for the piece 230
+[01/12/17 01:52:37] Peer 1004 has downloaded the piece 206 from 1002
+[01/12/17 01:52:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1003 for the piece 77
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1002 for the piece 93
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1003 for the piece 29
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1001 for the piece 194
+[01/12/17 01:52:37] Peer 1004 has downloaded the piece 81 from 1000
+[01/12/17 01:52:37] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:37] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:37] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:37] Peer 1004 received the 'have' message from Peer 1003 for the piece 270
+[01/12/17 01:52:37] Peer 1004 has downloaded the piece 152 from 1003
+[01/12/17 01:52:38] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1003 for the piece 124
+[01/12/17 01:52:38] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:38] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1002 for the piece 45
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1003 for the piece 7
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1001 for the piece 161
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1003 for the piece 276
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1001 for the piece 200
+[01/12/17 01:52:38] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1002 for the piece 228
+[01/12/17 01:52:38] Peer 1004 has downloaded the piece 243 from 1000
+[01/12/17 01:52:38] Peer 1004 received the 'have' message from Peer 1001 for the piece 37
+[01/12/17 01:52:39] Peer 1004 has downloaded the piece 269 from 1003
+[01/12/17 01:52:39] Peer 1004 has downloaded the piece 103 from 1000
+[01/12/17 01:52:39] Peer 1004 received the 'have' message from Peer 1002 for the piece 193
+[01/12/17 01:52:39] Peer 1004 received the 'have' message from Peer 1001 for the piece 90
+[01/12/17 01:52:39] Peer 1004 received the 'have' message from Peer 1003 for the piece 23
+[01/12/17 01:52:39] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:39] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:39] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:39] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:39] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:39] Peer 1004 has downloaded the piece 87 from 1000
+[01/12/17 01:52:39] Peer 1004 received the 'have' message from Peer 1003 for the piece 162
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1002 for the piece 145
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 205
+[01/12/17 01:52:40] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:40] Peer 1004 has downloaded the piece 162 from 1000
+[01/12/17 01:52:40] Peer 1004 has downloaded the piece 146 from 1003
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1002 for the piece 249
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1001 for the piece 177
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 223
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 41
+[01/12/17 01:52:40] Peer 1004 received the 'have' message from Peer 1002 for the piece 269
+[01/12/17 01:52:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:41] Peer 1004 received the 'have' message from Peer 1003 for the piece 132
+[01/12/17 01:52:41] Peer 1004 received the 'have' message from Peer 1002 for the piece 209
+[01/12/17 01:52:41] Peer 1004 has downloaded the piece 253 from 1000
+[01/12/17 01:52:41] Peer 1004 received the 'have' message from Peer 1001 for the piece 233
+[01/12/17 01:52:41] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:41] Peer 1004 received the 'have' message from Peer 1001 for the piece 245
+[01/12/17 01:52:41] Peer 1004 has downloaded the piece 203 from 1000
+[01/12/17 01:52:41] Peer 1004 received the 'have' message from Peer 1003 for the piece 195
+[01/12/17 01:52:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:41] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:41] Peer 1004 has downloaded the piece 37 from 1003
+[01/12/17 01:52:42] Peer 1004 received the 'have' message from Peer 1001 for the piece 0
+[01/12/17 01:52:42] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:42] Peer 1004 has downloaded the piece 161 from 1002
+[01/12/17 01:52:42] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:42] Peer 1004 received the 'have' message from Peer 1003 for the piece 27
+[01/12/17 01:52:42] Peer 1004 has downloaded the piece 50 from 1000
+[01/12/17 01:52:42] Peer 1004 received the 'have' message from Peer 1002 for the piece 278
+[01/12/17 01:52:42] Peer 1004 has downloaded the piece 178 from 1003
+[01/12/17 01:52:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:42] Peer 1004 has downloaded the piece 65 from 1000
+[01/12/17 01:52:43] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:43] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 43
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1001 for the piece 204
+[01/12/17 01:52:43] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 170
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1002 for the piece 205
+[01/12/17 01:52:43] Peer 1004 has downloaded the piece 236 from 1000
+[01/12/17 01:52:43] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1001 for the piece 239
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 143
+[01/12/17 01:52:43] Peer 1004: has the preferred neighbors 1003, 1001
+[01/12/17 01:52:43] Peer 1004 has the optimistically unchoke neighbor 1002
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 214
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1002 for the piece 171
+[01/12/17 01:52:43] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 103
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:44] Peer 1004 has downloaded the piece 51 from 1000
+[01/12/17 01:52:44] Peer 1004 received the 'have' message from Peer 1001 for the piece 205
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:44] Peer 1004 has downloaded the piece 279 from 1000
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:44] Peer 1004 received the 'have' message from Peer 1002 for the piece 132
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:44] Peer 1004 has downloaded the piece 124 from 1003
+[01/12/17 01:52:44] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:44] Peer 1004 received the 'have' message from Peer 1002 for the piece 190
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1001 for the piece 109
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 242
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:45] Peer 1004 has downloaded the piece 85 from 1000
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 280
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 140
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1002 for the piece 42
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 129
+[01/12/17 01:52:45] Peer 1004 has downloaded the piece 62 from 1000
+[01/12/17 01:52:45] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:45] Peer 1004 has downloaded the piece 171 from 1003
+[01/12/17 01:52:45] Peer 1004 received the 'have' message from Peer 1002 for the piece 149
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:46] Peer 1004 received the 'have' message from Peer 1001 for the piece 23
+[01/12/17 01:52:46] Peer 1004 is choked by Peer 1000
+[01/12/17 01:52:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 215
+[01/12/17 01:52:46] Peer 1004 received the 'have' message from Peer 1001 for the piece 73
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 3
+[01/12/17 01:52:46] Peer 1004 has downloaded the piece 132 from 1003
+[01/12/17 01:52:46] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 285
+[01/12/17 01:52:46] Peer 1004 has downloaded the piece 55 from 1002
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 227
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 39
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 124
+[01/12/17 01:52:47] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 47
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 228
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 172
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 203
+[01/12/17 01:52:47] Peer 1004 has downloaded the piece 109 from 1003
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 60
+[01/12/17 01:52:47] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:47] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 2
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 276
+[01/12/17 01:52:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 141
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 130
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1002 for the piece 194
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1001 for the piece 209
+[01/12/17 01:52:48] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:48] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:48] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:48] Peer 1004 has downloaded the piece 29 from 1003
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 142
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1002 for the piece 23
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 80
+[01/12/17 01:52:48] Peer 1004 received the 'have' message from Peer 1001 for the piece 228
+[01/12/17 01:52:49] Peer 1004 received the 'have' message from Peer 1002 for the piece 158
+[01/12/17 01:52:49] Peer 1004 received the 'have' message from Peer 1001 for the piece 151
+[01/12/17 01:52:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 0
+[01/12/17 01:52:49] Peer 1004 received the 'have' message from Peer 1001 for the piece 31
+[01/12/17 01:52:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 52
+[01/12/17 01:52:49] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:49] Peer 1004 has downloaded the piece 174 from 1002
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1003 for the piece 141
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1001 for the piece 152
+[01/12/17 01:52:50] Peer 1004 has downloaded the piece 84 from 1003
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1001 for the piece 243
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1002 for the piece 221
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1003 for the piece 249
+[01/12/17 01:52:50] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:50] Peer 1004 received the 'have' message from Peer 1003 for the piece 164
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1002 for the piece 231
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1001 for the piece 174
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1003 for the piece 33
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1003 for the piece 120
+[01/12/17 01:52:51] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:51] Peer 1004 has downloaded the piece 41 from 1003
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1002 for the piece 124
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1001 for the piece 75
+[01/12/17 01:52:51] Peer 1004 has downloaded the piece 7 from 1003
+[01/12/17 01:52:51] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:51] Peer 1004 received the 'have' message from Peer 1003 for the piece 144
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1002 for the piece 64
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1001 for the piece 123
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 67
+[01/12/17 01:52:52] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 81
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1001 for the piece 93
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1002 for the piece 142
+[01/12/17 01:52:52] Peer 1004 has downloaded the piece 249 from 1002
+[01/12/17 01:52:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 137
+[01/12/17 01:52:53] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1001 for the piece 43
+[01/12/17 01:52:53] Peer 1004 has downloaded the piece 242 from 1003
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1002 for the piece 262
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1003 for the piece 203
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1001 for the piece 171
+[01/12/17 01:52:53] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:53] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1003 for the piece 59
+[01/12/17 01:52:53] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:53] Peer 1004 has downloaded the piece 79 from 1000
+[01/12/17 01:52:53] Peer 1004 received the 'have' message from Peer 1001 for the piece 242
+[01/12/17 01:52:54] Peer 1004 has downloaded the piece 142 from 1000
+[01/12/17 01:52:54] Peer 1004 received the 'have' message from Peer 1003 for the piece 60
+[01/12/17 01:52:54] Peer 1004 has downloaded the piece 198 from 1000
+[01/12/17 01:52:54] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:54] Peer 1004 has downloaded the piece 252 from 1000
+[01/12/17 01:52:54] Peer 1004 received the 'have' message from Peer 1002 for the piece 48
+[01/12/17 01:52:54] Peer 1004 has downloaded the piece 94 from 1000
+[01/12/17 01:52:54] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:54] Peer 1004 received the 'have' message from Peer 1002 for the piece 214
+[01/12/17 01:52:54] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:54] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:54] Peer 1004 has downloaded the piece 63 from 1000
+[01/12/17 01:52:55] Peer 1004 has downloaded the piece 64 from 1002
+[01/12/17 01:52:55] Peer 1004 received the 'have' message from Peer 1001 for the piece 62
+[01/12/17 01:52:55] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:55] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:55] Peer 1004 received the 'have' message from Peer 1003 for the piece 207
+[01/12/17 01:52:55] Peer 1004 received the 'have' message from Peer 1001 for the piece 128
+[01/12/17 01:52:55] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:55] Peer 1004 received the 'have' message from Peer 1002 for the piece 152
+[01/12/17 01:52:55] Peer 1004 has downloaded the piece 101 from 1000
+[01/12/17 01:52:55] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:52:55] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:55] Peer 1004 has downloaded the piece 257 from 1003
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 69
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1002 for the piece 168
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:56] Peer 1004 has downloaded the piece 3 from 1000
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 194
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1001 for the piece 53
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1002 for the piece 62
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1002 for the piece 50
+[01/12/17 01:52:56] Peer 1004 has downloaded the piece 49 from 1000
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 253
+[01/12/17 01:52:56] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:56] Peer 1004 has downloaded the piece 47 from 1000
+[01/12/17 01:52:57] Peer 1004 has downloaded the piece 23 from 1002
+[01/12/17 01:52:57] Peer 1004 has downloaded the piece 133 from 1003
+[01/12/17 01:52:57] Peer 1004 received the 'have' message from Peer 1001 for the piece 45
+[01/12/17 01:52:57] Peer 1004 received the 'have' message from Peer 1002 for the piece 52
+[01/12/17 01:52:57] Peer 1004 received the 'have' message from Peer 1003 for the piece 111
+[01/12/17 01:52:57] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:57] Peer 1004 has downloaded the piece 6 from 1003
+[01/12/17 01:52:57] Peer 1004 received the 'have' message from Peer 1001 for the piece 27
+[01/12/17 01:52:57] Peer 1004 has downloaded the piece 168 from 1002
+[01/12/17 01:52:58] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:58] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:58] Peer 1004 received the 'have' message from Peer 1001 for the piece 61
+[01/12/17 01:52:58] Peer 1004 has downloaded the piece 250 from 1000
+[01/12/17 01:52:58] Peer 1004 received the 'have' message from Peer 1003 for the piece 222
+[01/12/17 01:52:58] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:58] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:58] Peer 1004 has downloaded the piece 208 from 1000
+[01/12/17 01:52:58] Peer 1004 received the 'have' message from Peer 1001 for the piece 132
+[01/12/17 01:52:58] Peer 1004 received the 'have' message from Peer 1002 for the piece 246
+[01/12/17 01:52:58] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:58] Peer 1004 received the 'have' message from Peer 1003 for the piece 166
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 24
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1001 for the piece 42
+[01/12/17 01:52:59] Peer 1004 has downloaded the piece 195 from 1003
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1002 for the piece 31
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:59] Peer 1004 is choked by Peer 1002
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 99
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 281
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1002 for the piece 22
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 16
+[01/12/17 01:52:59] Peer 1004: has the preferred neighbors 1003, 1001
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:52:59] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:52:59] Peer 1004 has downloaded the piece 218 from 1000
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 70
+[01/12/17 01:52:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 157
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:00] Peer 1004 has downloaded the piece 151 from 1000
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 262
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:00] Peer 1004 has downloaded the piece 245 from 1003
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 46
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1001 for the piece 48
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 102
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:00] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 261
+[01/12/17 01:53:00] Peer 1004 received the 'have' message from Peer 1001 for the piece 203
+[01/12/17 01:53:00] Peer 1004 has downloaded the piece 282 from 1000
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1002 for the piece 137
+[01/12/17 01:53:01] Peer 1004 has downloaded the piece 176 from 1000
+[01/12/17 01:53:01] Peer 1004 has downloaded the piece 111 from 1003
+[01/12/17 01:53:01] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 121
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 50
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1001 for the piece 214
+[01/12/17 01:53:01] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1001 for the piece 283
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 98
+[01/12/17 01:53:01] Peer 1004 received the 'have' message from Peer 1002 for the piece 222
+[01/12/17 01:53:01] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:01] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:01] Peer 1004 has downloaded the piece 213 from 1000
+[01/12/17 01:53:02] Peer 1004 received the 'have' message from Peer 1002 for the piece 36
+[01/12/17 01:53:02] Peer 1004 received the 'have' message from Peer 1003 for the piece 108
+[01/12/17 01:53:02] Peer 1004 received the 'have' message from Peer 1002 for the piece 242
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:02] Peer 1004 received the 'have' message from Peer 1001 for the piece 250
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:02] Peer 1004 received the 'have' message from Peer 1003 for the piece 74
+[01/12/17 01:53:02] Peer 1004 has downloaded the piece 10 from 1000
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:02] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:02] Peer 1004 is unchoked by Peer 1002
+[01/12/17 01:53:02] Peer 1004 has downloaded the piece 223 from 1003
+[01/12/17 01:53:02] Peer 1004 has downloaded the piece 70 from 1003
+[01/12/17 01:53:03] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:03] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:03] Peer 1004 received the 'have' message from Peer 1001 for the piece 167
+[01/12/17 01:53:03] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:03] Peer 1004 has downloaded the piece 2 from 1000
+[01/12/17 01:53:03] Peer 1004 received the 'have' message from Peer 1002 for the piece 245
+[01/12/17 01:53:03] Peer 1004 received the 'have' message from Peer 1003 for the piece 272
+[01/12/17 01:53:03] Peer 1004 has downloaded the piece 11 from 1000
+[01/12/17 01:53:03] Peer 1004 received the 'have' message from Peer 1001 for the piece 170
+[01/12/17 01:53:03] Peer 1004 has downloaded the piece 224 from 1003
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 79
+[01/12/17 01:53:04] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:04] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 244
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1002 for the piece 75
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1002 for the piece 111
+[01/12/17 01:53:04] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:04] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:04] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 18
+[01/12/17 01:53:04] Peer 1004 received the 'have' message from Peer 1001 for the piece 69
+[01/12/17 01:53:04] Peer 1004 has downloaded the piece 262 from 1000
+[01/12/17 01:53:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 200
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:05] Peer 1004 is unchoked by Peer 1002
+[01/12/17 01:53:05] Peer 1004 received the 'have' message from Peer 1003 for the piece 169
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:05] Peer 1004 is choked by Peer 1002
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:05] Peer 1004 received the 'have' message from Peer 1003 for the piece 101
+[01/12/17 01:53:05] Peer 1004 has downloaded the piece 15 from 1000
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:05] Peer 1004 has downloaded the piece 98 from 1003
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:05] Peer 1004 received the 'have' message from Peer 1003 for the piece 92
+[01/12/17 01:53:05] Peer 1004 has downloaded the piece 231 from 1002
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 95
+[01/12/17 01:53:06] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:06] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 134
+[01/12/17 01:53:06] Peer 1004 is choked by Peer 1000
+[01/12/17 01:53:06] Peer 1004 has downloaded the piece 100 from 1000
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1003 for the piece 128
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1002 for the piece 155
+[01/12/17 01:53:06] Peer 1004 has downloaded the piece 31 from 1002
+[01/12/17 01:53:06] Peer 1004 has downloaded the piece 172 from 1003
+[01/12/17 01:53:06] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:06] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1002 for the piece 151
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1003 for the piece 236
+[01/12/17 01:53:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 252
+[01/12/17 01:53:06] Peer 1004 has downloaded the piece 46 from 1003
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 94
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 65
+[01/12/17 01:53:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 184
+[01/12/17 01:53:07] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 113
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 79
+[01/12/17 01:53:07] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 204
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1003 for the piece 93
+[01/12/17 01:53:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 222
+[01/12/17 01:53:07] Peer 1004 is choked by Peer 1001
+[01/12/17 01:53:07] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:53:07] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 78
+[01/12/17 01:53:07] Peer 1004 has downloaded the piece 211 from 1003
+[01/12/17 01:53:08] Peer 1004 received the 'have' message from Peer 1001 for the piece 137
+[01/12/17 01:53:08] Peer 1004 received the 'have' message from Peer 1003 for the piece 163
+[01/12/17 01:53:08] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:08] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:08] Peer 1004 has downloaded the piece 43 from 1003
+[01/12/17 01:53:08] Peer 1004 received the 'have' message from Peer 1001 for the piece 189
+[01/12/17 01:53:08] Peer 1004 received the 'have' message from Peer 1003 for the piece 75
+[01/12/17 01:53:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 103
+[01/12/17 01:53:08] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:08] Peer 1004 has downloaded the piece 141 from 1003
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 178
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 229
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1003 for the piece 241
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 282
+[01/12/17 01:53:09] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:09] Peer 1004 has downloaded the piece 80 from 1003
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1003 for the piece 283
+[01/12/17 01:53:09] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 86
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1003 for the piece 112
+[01/12/17 01:53:09] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 11
+[01/12/17 01:53:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 232
+[01/12/17 01:53:09] Peer 1004 has downloaded the piece 241 from 1003
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 215
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 87
+[01/12/17 01:53:10] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:10] Peer 1004 has downloaded the piece 24 from 1003
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1001 for the piece 121
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 153
+[01/12/17 01:53:10] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1003 for the piece 187
+[01/12/17 01:53:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 110
+[01/12/17 01:53:10] Peer 1004 has downloaded the piece 274 from 1001
+[01/12/17 01:53:11] Peer 1004 has downloaded the piece 121 from 1003
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 238
+[01/12/17 01:53:11] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 116
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 187
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 99
+[01/12/17 01:53:11] Peer 1004 has downloaded the piece 42 from 1003
+[01/12/17 01:53:11] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:11] Peer 1004 is choked by Peer 1001
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 272
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1003 for the piece 179
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 109
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 232
+[01/12/17 01:53:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 84
+[01/12/17 01:53:12] Peer 1004 has downloaded the piece 246 from 1003
+[01/12/17 01:53:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 241
+[01/12/17 01:53:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 24
+[01/12/17 01:53:12] Peer 1004 received the 'have' message from Peer 1003 for the piece 83
+[01/12/17 01:53:12] Peer 1004 received the 'have' message from Peer 1003 for the piece 145
+[01/12/17 01:53:12] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:12] Peer 1004 has downloaded the piece 265 from 1003
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 53
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 188
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 253
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 144
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 180
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 118
+[01/12/17 01:53:13] Peer 1004 received the 'have' message from Peer 1003 for the piece 259
+[01/12/17 01:53:13] Peer 1004 has the optimistically unchoke neighbor 1001
+[01/12/17 01:53:13] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:53:13] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:53:13] Peer 1004 has downloaded the piece 125 from 1000
+[01/12/17 01:53:14] Peer 1004 received the 'have' message from Peer 1003 for the piece 232
+[01/12/17 01:53:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 257
+[01/12/17 01:53:14] Peer 1004 has downloaded the piece 179 from 1000
+[01/12/17 01:53:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 191
+[01/12/17 01:53:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 29
+[01/12/17 01:53:14] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:14] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:14] Peer 1004 has downloaded the piece 33 from 1003
+[01/12/17 01:53:14] Peer 1004 has downloaded the piece 234 from 1000
+[01/12/17 01:53:14] Peer 1004 has downloaded the piece 14 from 1000
+[01/12/17 01:53:14] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:14] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:15] Peer 1004 has downloaded the piece 272 from 1001
+[01/12/17 01:53:15] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:15] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:15] Peer 1004 has downloaded the piece 83 from 1000
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 99
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1003 for the piece 48
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1001 for the piece 192
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 146
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1003 for the piece 260
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 122
+[01/12/17 01:53:15] Peer 1004: has the preferred neighbors 1001, 1002
+[01/12/17 01:53:15] Peer 1004 has downloaded the piece 67 from 1001
+[01/12/17 01:53:15] Peer 1004 received the 'have' message from Peer 1003 for the piece 229
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 260
+[01/12/17 01:53:16] Peer 1004 has downloaded the piece 22 from 1000
+[01/12/17 01:53:16] Peer 1004 has downloaded the piece 210 from 1000
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:16] Peer 1004 has downloaded the piece 187 from 1003
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 223
+[01/12/17 01:53:16] Peer 1004 received the 'have' message from Peer 1003 for the piece 188
+[01/12/17 01:53:16] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 16
+[01/12/17 01:53:16] Peer 1004 received the 'have' message from Peer 1003 for the piece 62
+[01/12/17 01:53:17] Peer 1004 has downloaded the piece 144 from 1000
+[01/12/17 01:53:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 101
+[01/12/17 01:53:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 103
+[01/12/17 01:53:17] Peer 1004 received the 'have' message from Peer 1003 for the piece 22
+[01/12/17 01:53:17] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:17] Peer 1004 has downloaded the piece 16 from 1000
+[01/12/17 01:53:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 72
+[01/12/17 01:53:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 187
+[01/12/17 01:53:17] Peer 1004 has downloaded the piece 77 from 1001
+[01/12/17 01:53:18] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:18] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:18] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 215
+[01/12/17 01:53:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 49
+[01/12/17 01:53:18] Peer 1004 has downloaded the piece 276 from 1003
+[01/12/17 01:53:18] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:18] Peer 1004 received the 'have' message from Peer 1003 for the piece 4
+[01/12/17 01:53:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 172
+[01/12/17 01:53:19] Peer 1004 has downloaded the piece 35 from 1000
+[01/12/17 01:53:19] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 155
+[01/12/17 01:53:19] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:19] Peer 1004 has downloaded the piece 284 from 1000
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 79
+[01/12/17 01:53:19] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 122
+[01/12/17 01:53:19] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:19] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 136
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 26
+[01/12/17 01:53:19] Peer 1004 received the 'have' message from Peer 1003 for the piece 282
+[01/12/17 01:53:20] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:20] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:20] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:20] Peer 1004 has downloaded the piece 196 from 1000
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 27
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1003 for the piece 231
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 235
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 18
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 122
+[01/12/17 01:53:20] Peer 1004 has downloaded the piece 155 from 1000
+[01/12/17 01:53:20] Peer 1004 received the 'have' message from Peer 1003 for the piece 154
+[01/12/17 01:53:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 201
+[01/12/17 01:53:21] Peer 1004 has downloaded the piece 207 from 1003
+[01/12/17 01:53:21] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:21] Peer 1004 has downloaded the piece 69 from 1003
+[01/12/17 01:53:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 157
+[01/12/17 01:53:21] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:21] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:21] Peer 1004 has downloaded the piece 169 from 1000
+[01/12/17 01:53:21] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 51
+[01/12/17 01:53:22] Peer 1004 has downloaded the piece 192 from 1001
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 106
+[01/12/17 01:53:22] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:22] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:22] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 49
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 121
+[01/12/17 01:53:22] Peer 1004 has downloaded the piece 226 from 1000
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 16
+[01/12/17 01:53:22] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1003 for the piece 175
+[01/12/17 01:53:22] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 271
+[01/12/17 01:53:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 22
+[01/12/17 01:53:23] Peer 1004 has downloaded the piece 60 from 1001
+[01/12/17 01:53:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 281
+[01/12/17 01:53:23] Peer 1004 has downloaded the piece 99 from 1003
+[01/12/17 01:53:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 3
+[01/12/17 01:53:23] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:23] Peer 1004 has downloaded the piece 158 from 1000
+[01/12/17 01:53:23] Peer 1004: has the preferred neighbors 1001, 1002
+[01/12/17 01:53:23] Peer 1004 has the optimistically unchoke neighbor 1003
+[01/12/17 01:53:23] Peer 1004 received the 'have' message from Peer 1003 for the piece 185
+[01/12/17 01:53:23] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 96
+[01/12/17 01:53:24] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:24] Peer 1004 has downloaded the piece 256 from 1000
+[01/12/17 01:53:24] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:24] Peer 1004 received the 'have' message from Peer 1003 for the piece 198
+[01/12/17 01:53:24] Peer 1004 received the 'have' message from Peer 1002 for the piece 134
+[01/12/17 01:53:24] Peer 1004 is unchoked by Peer 1002
+[01/12/17 01:53:24] Peer 1004 is choked by Peer 1002
+[01/12/17 01:53:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 164
+[01/12/17 01:53:24] Peer 1004 has downloaded the piece 280 from 1003
+[01/12/17 01:53:24] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:24] Peer 1004 received the 'have' message from Peer 1002 for the piece 51
+[01/12/17 01:53:24] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:24] Peer 1004 received the 'have' message from Peer 1003 for the piece 147
+[01/12/17 01:53:25] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:25] Peer 1004 received the 'have' message from Peer 1003 for the piece 26
+[01/12/17 01:53:25] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:25] Peer 1004 received the 'have' message from Peer 1002 for the piece 112
+[01/12/17 01:53:25] Peer 1004 has downloaded the piece 53 from 1001
+[01/12/17 01:53:25] Peer 1004 received the 'have' message from Peer 1003 for the piece 176
+[01/12/17 01:53:25] Peer 1004 has downloaded the piece 48 from 1002
+[01/12/17 01:53:25] Peer 1004 received the 'have' message from Peer 1001 for the piece 125
+[01/12/17 01:53:25] Peer 1004: has the preferred neighbors 1002, 1003
+[01/12/17 01:53:25] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:25] Peer 1004 has downloaded the piece 86 from 1000
+[01/12/17 01:53:25] Peer 1004 received the 'have' message from Peer 1002 for the piece 237
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 100
+[01/12/17 01:53:26] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1002 for the piece 280
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 115
+[01/12/17 01:53:26] Peer 1004 is choked by Peer 1000
+[01/12/17 01:53:26] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:26] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1002 for the piece 29
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1003 for the piece 148
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 257
+[01/12/17 01:53:26] Peer 1004 received the 'have' message from Peer 1001 for the piece 261
+[01/12/17 01:53:26] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:26] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:26] Peer 1004 has downloaded the piece 112 from 1003
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1001 for the piece 6
+[01/12/17 01:53:27] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1002 for the piece 272
+[01/12/17 01:53:27] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1003 for the piece 134
+[01/12/17 01:53:27] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1003 for the piece 213
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1001 for the piece 184
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1002 for the piece 241
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1003 for the piece 63
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1002 for the piece 91
+[01/12/17 01:53:27] Peer 1004 received the 'have' message from Peer 1001 for the piece 196
+[01/12/17 01:53:28] Peer 1004 received the 'have' message from Peer 1003 for the piece 264
+[01/12/17 01:53:28] Peer 1004 has downloaded the piece 134 from 1001
+[01/12/17 01:53:28] Peer 1004 received the 'have' message from Peer 1003 for the piece 201
+[01/12/17 01:53:28] Peer 1004 received the 'have' message from Peer 1003 for the piece 86
+[01/12/17 01:53:28] Peer 1004 received the 'have' message from Peer 1002 for the piece 2
+[01/12/17 01:53:28] Peer 1004 received the 'have' message from Peer 1001 for the piece 66
+[01/12/17 01:53:28] Peer 1004 has downloaded the piece 4 from 1003
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1001 for the piece 262
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1002 for the piece 125
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 237
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1001 for the piece 50
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1002 for the piece 141
+[01/12/17 01:53:29] Peer 1004 received the 'have' message from Peer 1003 for the piece 88
+[01/12/17 01:53:30] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:30] Peer 1004 received the 'have' message from Peer 1001 for the piece 9
+[01/12/17 01:53:30] Peer 1004 received the 'have' message from Peer 1002 for the piece 244
+[01/12/17 01:53:30] Peer 1004 received the 'have' message from Peer 1003 for the piece 28
+[01/12/17 01:53:30] Peer 1004 has downloaded the piece 167 from 1001
+[01/12/17 01:53:31] Peer 1004 has downloaded the piece 222 from 1003
+[01/12/17 01:53:31] Peer 1004 received the 'have' message from Peer 1001 for the piece 188
+[01/12/17 01:53:31] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:31] Peer 1004 received the 'have' message from Peer 1002 for the piece 207
+[01/12/17 01:53:31] Peer 1004 received the 'have' message from Peer 1003 for the piece 277
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1002 for the piece 119
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1003 for the piece 95
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1001 for the piece 21
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1001 for the piece 249
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1003 for the piece 125
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1003 for the piece 72
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1002 for the piece 74
+[01/12/17 01:53:32] Peer 1004 received the 'have' message from Peer 1001 for the piece 231
+[01/12/17 01:53:33] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:33] Peer 1004 received the 'have' message from Peer 1002 for the piece 213
+[01/12/17 01:53:33] Peer 1004 received the 'have' message from Peer 1003 for the piece 9
+[01/12/17 01:53:33] Peer 1004 received the 'have' message from Peer 1001 for the piece 259
+[01/12/17 01:53:33] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:53:33] Peer 1004 has downloaded the piece 166 from 1003
+[01/12/17 01:53:33] Peer 1004 has the optimistically unchoke neighbor 1001
+[01/12/17 01:53:33] Peer 1004 received the 'have' message from Peer 1003 for the piece 91
+[01/12/17 01:53:33] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:53:34] Peer 1004 received the 'have' message from Peer 1002 for the piece 15
+[01/12/17 01:53:34] Peer 1004 is choked by Peer 1001
+[01/12/17 01:53:34] Peer 1004 has downloaded the piece 36 from 1000
+[01/12/17 01:53:34] Peer 1004 has downloaded the piece 159 from 1000
+[01/12/17 01:53:34] Peer 1004 received the 'have' message from Peer 1002 for the piece 226
+[01/12/17 01:53:34] Peer 1004 has downloaded the piece 283 from 1001
+[01/12/17 01:53:34] Peer 1004 received the 'have' message from Peer 1003 for the piece 54
+[01/12/17 01:53:34] Peer 1004 received the 'have' message from Peer 1001 for the piece 96
+[01/12/17 01:53:35] Peer 1004 received the 'have' message from Peer 1003 for the piece 66
+[01/12/17 01:53:35] Peer 1004 has downloaded the piece 117 from 1000
+[01/12/17 01:53:35] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:35] Peer 1004 has downloaded the piece 164 from 1001
+[01/12/17 01:53:35] Peer 1004 received the 'have' message from Peer 1001 for the piece 78
+[01/12/17 01:53:35] Peer 1004 has downloaded the piece 181 from 1000
+[01/12/17 01:53:35] Peer 1004: has the preferred neighbors 1002, 1001
+[01/12/17 01:53:36] Peer 1004 received the 'have' message from Peer 1002 for the piece 89
+[01/12/17 01:53:36] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:36] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:36] Peer 1004 received the 'have' message from Peer 1003 for the piece 89
+[01/12/17 01:53:36] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:36] Peer 1004 has downloaded the piece 202 from 1000
+[01/12/17 01:53:36] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:36] Peer 1004 received the 'have' message from Peer 1001 for the piece 147
+[01/12/17 01:53:36] Peer 1004 received the 'have' message from Peer 1002 for the piece 282
+[01/12/17 01:53:36] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:36] Peer 1004 is choked by Peer 1003
+[01/12/17 01:53:36] Peer 1004 received the 'have' message from Peer 1002 for the piece 133
+[01/12/17 01:53:36] Peer 1004 has downloaded the piece 91 from 1000
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:37] Peer 1004 received the 'have' message from Peer 1001 for the piece 207
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:37] Peer 1004 received the 'have' message from Peer 1002 for the piece 277
+[01/12/17 01:53:37] Peer 1004 has downloaded the piece 131 from 1000
+[01/12/17 01:53:37] Peer 1004 received the 'have' message from Peer 1001 for the piece 229
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:37] Peer 1004 received the 'have' message from Peer 1001 for the piece 63
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:37] Peer 1004 received the 'have' message from Peer 1003 for the piece 15
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:37] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:37] Peer 1004 has downloaded the piece 30 from 1000
+[01/12/17 01:53:38] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:38] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:38] Peer 1004 received the 'have' message from Peer 1003 for the piece 254
+[01/12/17 01:53:38] Peer 1004 has downloaded the piece 230 from 1000
+[01/12/17 01:53:38] Peer 1004 received the 'have' message from Peer 1002 for the piece 9
+[01/12/17 01:53:38] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:38] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:38] Peer 1004 has downloaded the piece 153 from 1000
+[01/12/17 01:53:38] Peer 1004 received the 'have' message from Peer 1001 for the piece 14
+[01/12/17 01:53:38] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:38] Peer 1004 received the 'have' message from Peer 1002 for the piece 131
+[01/12/17 01:53:39] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:39] Peer 1004 has downloaded the piece 143 from 1000
+[01/12/17 01:53:39] Peer 1004 received the 'have' message from Peer 1001 for the piece 145
+[01/12/17 01:53:39] Peer 1004 received the 'have' message from Peer 1002 for the piece 63
+[01/12/17 01:53:39] Peer 1004 received the 'have' message from Peer 1003 for the piece 119
+[01/12/17 01:53:39] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:39] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:39] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:39] Peer 1004 has downloaded the piece 273 from 1000
+[01/12/17 01:53:39] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:39] Peer 1004 received the 'have' message from Peer 1002 for the piece 28
+[01/12/17 01:53:39] Peer 1004 received the 'have' message from Peer 1003 for the piece 5
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1001 for the piece 94
+[01/12/17 01:53:40] Peer 1004 has downloaded the piece 268 from 1000
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1002 for the piece 176
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 252
+[01/12/17 01:53:40] Peer 1004 has downloaded the piece 122 from 1000
+[01/12/17 01:53:40] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 191
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1002 for the piece 223
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1003 for the piece 199
+[01/12/17 01:53:40] Peer 1004 received the 'have' message from Peer 1001 for the piece 210
+[01/12/17 01:53:40] Peer 1004 has downloaded the piece 212 from 1000
+[01/12/17 01:53:40] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:40] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:40] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:40] Peer 1004 has downloaded the piece 136 from 1000
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1002 for the piece 143
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1001 for the piece 276
+[01/12/17 01:53:41] Peer 1004 has downloaded the piece 150 from 1000
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1003 for the piece 96
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1002 for the piece 167
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1003 for the piece 36
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1002 for the piece 87
+[01/12/17 01:53:41] Peer 1004 has downloaded the piece 72 from 1000
+[01/12/17 01:53:41] Peer 1004 received the 'have' message from Peer 1003 for the piece 25
+[01/12/17 01:53:41] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:41] Peer 1004 has downloaded the piece 258 from 1000
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1002 for the piece 238
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1003 for the piece 21
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:42] Peer 1004 has downloaded the piece 148 from 1000
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1003 for the piece 14
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1002 for the piece 21
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1003 for the piece 202
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:42] Peer 1004 received the 'have' message from Peer 1001 for the piece 218
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:42] Peer 1004 has downloaded the piece 56 from 1000
+[01/12/17 01:53:42] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:42] Peer 1004 has downloaded the piece 17 from 1000
+[01/12/17 01:53:43] Peer 1004 received the 'have' message from Peer 1001 for the piece 176
+[01/12/17 01:53:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 196
+[01/12/17 01:53:43] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:43] Peer 1004 has downloaded the piece 184 from 1000
+[01/12/17 01:53:43] Peer 1004 has the optimistically unchoke neighbor 1003
+[01/12/17 01:53:43] Peer 1004 received the 'have' message from Peer 1002 for the piece 175
+[01/12/17 01:53:43] Peer 1004 received the 'have' message from Peer 1003 for the piece 110
+[01/12/17 01:53:43] Peer 1004 received the 'have' message from Peer 1001 for the piece 159
+[01/12/17 01:53:44] Peer 1004 is unchoked by Peer 1003
+[01/12/17 01:53:44] Peer 1004 has downloaded the piece 261 from 1000
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 174
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1002 for the piece 10
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1001 for the piece 131
+[01/12/17 01:53:45] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:45] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:45] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1002 for the piece 100
+[01/12/17 01:53:45] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:45] Peer 1004 has downloaded the piece 88 from 1003
+[01/12/17 01:53:45] Peer 1004 has downloaded the piece 74 from 1000
+[01/12/17 01:53:45] Peer 1004: has the preferred neighbors 1002, 1003
+[01/12/17 01:53:45] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1003 for the piece 135
+[01/12/17 01:53:45] Peer 1004 received the 'have' message from Peer 1002 for the piece 135
+[01/12/17 01:53:46] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1001 for the piece 155
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1002 for the piece 166
+[01/12/17 01:53:46] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 212
+[01/12/17 01:53:46] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:46] Peer 1004 is choked by Peer 1001
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 256
+[01/12/17 01:53:46] Peer 1004 is choked by Peer 1000
+[01/12/17 01:53:46] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1001 for the piece 46
+[01/12/17 01:53:46] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 107
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1003 for the piece 131
+[01/12/17 01:53:46] Peer 1004 received the 'have' message from Peer 1001 for the piece 87
+[01/12/17 01:53:46] Peer 1004 has downloaded the piece 119 from 1003
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 192
+[01/12/17 01:53:47] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 17
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 8
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 210
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 67
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 58
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 192
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1002 for the piece 236
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 19
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1001 for the piece 24
+[01/12/17 01:53:47] Peer 1004 received the 'have' message from Peer 1003 for the piece 218
+[01/12/17 01:53:47] Peer 1004 has downloaded the piece 188 from 1003
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 273
+[01/12/17 01:53:48] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1002 for the piece 88
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 85
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1001 for the piece 279
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 10
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1003 for the piece 20
+[01/12/17 01:53:48] Peer 1004 received the 'have' message from Peer 1001 for the piece 95
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 35
+[01/12/17 01:53:49] Peer 1004 has downloaded the piece 96 from 1003
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1001 for the piece 144
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1002 for the piece 184
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 208
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 268
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1002 for the piece 258
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1001 for the piece 91
+[01/12/17 01:53:49] Peer 1004 received the 'have' message from Peer 1003 for the piece 226
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1002 for the piece 130
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1001 for the piece 175
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1003 for the piece 219
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1003 for the piece 117
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1002 for the piece 260
+[01/12/17 01:53:50] Peer 1004 received the 'have' message from Peer 1001 for the piece 138
+[01/12/17 01:53:51] Peer 1004 has downloaded the piece 21 from 1003
+[01/12/17 01:53:51] Peer 1004 received the 'have' message from Peer 1001 for the piece 112
+[01/12/17 01:53:51] Peer 1004 received the 'have' message from Peer 1003 for the piece 150
+[01/12/17 01:53:51] Peer 1004 received the 'have' message from Peer 1001 for the piece 191
+[01/12/17 01:53:51] Peer 1004 received the 'have' message from Peer 1002 for the piece 3
+[01/12/17 01:53:51] Peer 1004 received the 'have' message from Peer 1003 for the piece 105
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1001 for the piece 98
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 186
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1002 for the piece 264
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1001 for the piece 119
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 56
+[01/12/17 01:53:52] Peer 1004 has downloaded the piece 185 from 1003
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1003 for the piece 159
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1001 for the piece 36
+[01/12/17 01:53:52] Peer 1004 received the 'have' message from Peer 1002 for the piece 163
+[01/12/17 01:53:53] Peer 1004 received the 'have' message from Peer 1001 for the piece 212
+[01/12/17 01:53:53] Peer 1004 received the 'have' message from Peer 1003 for the piece 139
+[01/12/17 01:53:53] Peer 1004 received the 'have' message from Peer 1003 for the piece 165
+[01/12/17 01:53:53] Peer 1004 is unchoked by Peer 1000
+[01/12/17 01:53:53] Peer 1004 received the 'have' message from Peer 1002 for the piece 251
+[01/12/17 01:53:53] Peer 1004 has the optimistically unchoke neighbor 1001
+[01/12/17 01:53:53] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:53:54] Peer 1004 received the 'have' message from Peer 1001 for the piece 101
+[01/12/17 01:53:54] Peer 1004 has downloaded the piece 232 from 1003
+[01/12/17 01:53:54] Peer 1004 received the 'have' message from Peer 1003 for the piece 258
+[01/12/17 01:53:54] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:54] Peer 1004 has downloaded the piece 277 from 1000
+[01/12/17 01:53:54] Peer 1004 has downloaded the piece 259 from 1000
+[01/12/17 01:53:55] Peer 1004 received the 'have' message from Peer 1001 for the piece 185
+[01/12/17 01:53:55] Peer 1004 received the 'have' message from Peer 1003 for the piece 173
+[01/12/17 01:53:55] Peer 1004 received the 'have' message from Peer 1002 for the piece 118
+[01/12/17 01:53:55] Peer 1004 has downloaded the piece 9 from 1001
+[01/12/17 01:53:55] Peer 1004 has downloaded the piece 106 from 1003
+[01/12/17 01:53:55] Peer 1004: has the preferred neighbors 1002, 1001
+[01/12/17 01:53:55] Peer 1004 received the 'have' message from Peer 1002 for the piece 41
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1001 for the piece 186
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 181
+[01/12/17 01:53:56] Peer 1004 has downloaded the piece 191 from 1000
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1001 for the piece 217
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 68
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1002 for the piece 37
+[01/12/17 01:53:56] Peer 1004 has downloaded the piece 154 from 1003
+[01/12/17 01:53:56] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:56] Peer 1004 received the 'have' message from Peer 1003 for the piece 216
+[01/12/17 01:53:57] Peer 1004 has downloaded the piece 271 from 1000
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1001 for the piece 277
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1003 for the piece 8
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1002 for the piece 169
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1001 for the piece 111
+[01/12/17 01:53:57] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1002 for the piece 138
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1001 for the piece 33
+[01/12/17 01:53:57] Peer 1004 received the 'have' message from Peer 1003 for the piece 118
+[01/12/17 01:53:57] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:53:57] Peer 1004 has downloaded the piece 26 from 1000
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1001 for the piece 163
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1003 for the piece 40
+[01/12/17 01:53:58] Peer 1004 has downloaded the piece 138 from 1001
+[01/12/17 01:53:58] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1002 for the piece 220
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1003 for the piece 197
+[01/12/17 01:53:58] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1002 for the piece 156
+[01/12/17 01:53:58] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:53:58] Peer 1004 has downloaded the piece 110 from 1000
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1003 for the piece 251
+[01/12/17 01:53:58] Peer 1004 received the 'have' message from Peer 1002 for the piece 54
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1001 for the piece 226
+[01/12/17 01:53:59] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:53:59] Peer 1004 is choked by Peer 1003
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 104
+[01/12/17 01:53:59] Peer 1004 has downloaded the piece 118 from 1001
+[01/12/17 01:53:59] Peer 1004 received the 'interested' message from 1003
+[01/12/17 01:53:59] Peer 1004 has downloaded the piece 180 from 1000
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1003 for the piece 279
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1001 for the piece 165
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1002 for the piece 69
+[01/12/17 01:53:59] Peer 1004: has the preferred neighbors 1001, 1002
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1001 for the piece 49
+[01/12/17 01:53:59] Peer 1004 received the 'have' message from Peer 1001 for the piece 19
+[01/12/17 01:54:00] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 217
+[01/12/17 01:54:00] Peer 1004 has downloaded the piece 115 from 1000
+[01/12/17 01:54:00] Peer 1004 received the 'have' message from Peer 1003 for the piece 220
+[01/12/17 01:54:00] Peer 1004 has downloaded the piece 186 from 1001
+[01/12/17 01:54:00] Peer 1004 received the 'have' message from Peer 1002 for the piece 1
+[01/12/17 01:54:00] Peer 1004 has downloaded the piece 165 from 1001
+[01/12/17 01:54:00] Peer 1004 received the 'have' message from Peer 1002 for the piece 83
+[01/12/17 01:54:00] Peer 1004 has downloaded the piece 220 from 1000
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1001 for the piece 213
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1002 for the piece 92
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 1
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 182
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1002 for the piece 80
+[01/12/17 01:54:01] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:01] Peer 1004 has downloaded the piece 260 from 1000
+[01/12/17 01:54:01] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:01] Peer 1004 received the 'have' message from Peer 1003 for the piece 275
+[01/12/17 01:54:01] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:01] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:01] Peer 1004 has downloaded the piece 237 from 1000
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1001 for the piece 179
+[01/12/17 01:54:02] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1003 for the piece 71
+[01/12/17 01:54:02] Peer 1004 has downloaded the piece 229 from 1000
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1003 for the piece 138
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1001 for the piece 83
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1002 for the piece 40
+[01/12/17 01:54:02] Peer 1004 has downloaded the piece 75 from 1000
+[01/12/17 01:54:02] Peer 1004 received the 'have' message from Peer 1002 for the piece 108
+[01/12/17 01:54:02] Peer 1004 has downloaded the piece 217 from 1001
+[01/12/17 01:54:03] Peer 1004 received the 'have' message from Peer 1003 for the piece 38
+[01/12/17 01:54:03] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:03] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:03] Peer 1004 received the 'have' message from Peer 1003 for the piece 263
+[01/12/17 01:54:03] Peer 1004 has downloaded the piece 38 from 1000
+[01/12/17 01:54:03] Peer 1004 received the 'have' message from Peer 1003 for the piece 127
+[01/12/17 01:54:03] Peer 1004 received the 'have' message from Peer 1001 for the piece 148
+[01/12/17 01:54:03] Peer 1004 has downloaded the piece 71 from 1000
+[01/12/17 01:54:03] Peer 1004 has the optimistically unchoke neighbor 1003
+[01/12/17 01:54:03] Peer 1004 has downloaded the piece 8 from 1001
+[01/12/17 01:54:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 240
+[01/12/17 01:54:04] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:04] Peer 1004 has downloaded the piece 89 from 1000
+[01/12/17 01:54:04] Peer 1004 is unchoked by Peer 1003
+[01/12/17 01:54:04] Peer 1004 received the 'have' message from Peer 1001 for the piece 116
+[01/12/17 01:54:04] Peer 1004 received the 'have' message from Peer 1002 for the piece 165
+[01/12/17 01:54:04] Peer 1004 received the 'have' message from Peer 1003 for the piece 225
+[01/12/17 01:54:04] Peer 1004 received the 'have' message from Peer 1002 for the piece 218
+[01/12/17 01:54:04] Peer 1004 has downloaded the piece 145 from 1003
+[01/12/17 01:54:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:05] Peer 1004 has downloaded the piece 1 from 1000
+[01/12/17 01:54:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 33
+[01/12/17 01:54:05] Peer 1004 received the 'have' message from Peer 1001 for the piece 154
+[01/12/17 01:54:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:05] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:05] Peer 1004 has downloaded the piece 173 from 1000
+[01/12/17 01:54:05] Peer 1004 received the 'have' message from Peer 1002 for the piece 197
+[01/12/17 01:54:05] Peer 1004: has the preferred neighbors 1003, 1001
+[01/12/17 01:54:05] Peer 1004 has downloaded the piece 135 from 1003
+[01/12/17 01:54:05] Peer 1004 received the 'have' message from Peer 1001 for the piece 100
+[01/12/17 01:54:05] Peer 1004 has downloaded the piece 58 from 1003
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 127
+[01/12/17 01:54:06] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:06] Peer 1004 has downloaded the piece 264 from 1000
+[01/12/17 01:54:06] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1002 for the piece 5
+[01/12/17 01:54:06] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 130
+[01/12/17 01:54:06] Peer 1004 has downloaded the piece 140 from 1003
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 28
+[01/12/17 01:54:06] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1001 for the piece 153
+[01/12/17 01:54:06] Peer 1004 received the 'have' message from Peer 1002 for the piece 179
+[01/12/17 01:54:06] Peer 1004 has downloaded the piece 19 from 1001
+[01/12/17 01:54:06] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:06] Peer 1004 has downloaded the piece 197 from 1000
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 4
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 146
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 273
+[01/12/17 01:54:07] Peer 1004 has downloaded the piece 199 from 1003
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 80
+[01/12/17 01:54:07] Peer 1004 has downloaded the piece 54 from 1000
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 40
+[01/12/17 01:54:07] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 6
+[01/12/17 01:54:07] Peer 1004 has downloaded the piece 27 from 1003
+[01/12/17 01:54:07] Peer 1004: has the preferred neighbors 1003, 1002
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1001 for the piece 208
+[01/12/17 01:54:07] Peer 1004 received the 'have' message from Peer 1002 for the piece 173
+[01/12/17 01:54:07] Peer 1004 is choked by Peer 1001
+[01/12/17 01:54:07] Peer 1004 has downloaded the piece 275 from 1000
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:08] Peer 1004 has downloaded the piece 68 from 1000
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 196
+[01/12/17 01:54:08] Peer 1004 has downloaded the piece 216 from 1003
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1001 for the piece 219
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:08] Peer 1004 has downloaded the piece 5 from 1000
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1001 for the piece 197
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 217
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1001 for the piece 20
+[01/12/17 01:54:08] Peer 1004 received the 'have' message from Peer 1002 for the piece 263
+[01/12/17 01:54:08] Peer 1004 has downloaded the piece 215 from 1000
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:08] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:08] Peer 1004 has downloaded the piece 130 from 1003
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 127
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 115
+[01/12/17 01:54:09] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:09] Peer 1004 has downloaded the piece 157 from 1003
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 68
+[01/12/17 01:54:09] Peer 1004 has downloaded the piece 137 from 1000
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 72
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 153
+[01/12/17 01:54:09] Peer 1004 has downloaded the piece 182 from 1000
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 180
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1001 for the piece 251
+[01/12/17 01:54:09] Peer 1004 has downloaded the piece 281 from 1003
+[01/12/17 01:54:09] Peer 1004 received the 'have' message from Peer 1002 for the piece 150
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1001 for the piece 173
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 202
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1001 for the piece 25
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 275
+[01/12/17 01:54:10] Peer 1004 has downloaded the piece 263 from 1000
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:10] Peer 1004 has downloaded the piece 40 from 1000
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1001 for the piece 201
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 172
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:10] Peer 1004 has downloaded the piece 225 from 1003
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:10] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:10] Peer 1004 has downloaded the piece 214 from 1000
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1001 for the piece 117
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 261
+[01/12/17 01:54:10] Peer 1004 received the 'have' message from Peer 1002 for the piece 77
+[01/12/17 01:54:11] Peer 1004 has downloaded the piece 127 from 1000
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 85
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 216
+[01/12/17 01:54:11] Peer 1004 has downloaded the piece 139 from 1003
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 182
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 71
+[01/12/17 01:54:11] Peer 1004 has downloaded the piece 108 from 1000
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 268
+[01/12/17 01:54:11] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1002 for the piece 46
+[01/12/17 01:54:11] Peer 1004 has downloaded the piece 219 from 1000
+[01/12/17 01:54:11] Peer 1004 received the 'have' message from Peer 1001 for the piece 30
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 154
+[01/12/17 01:54:12] Peer 1004 has downloaded the piece 20 from 1003
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 281
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 104
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 256
+[01/12/17 01:54:12] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:12] Peer 1004 has downloaded the piece 104 from 1000
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 8
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 52
+[01/12/17 01:54:12] Peer 1004 has downloaded the piece 107 from 1000
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 199
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1001 for the piece 275
+[01/12/17 01:54:12] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:12] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:12] Peer 1004 received the 'have' message from Peer 1002 for the piece 212
+[01/12/17 01:54:12] Peer 1004 has downloaded the piece 25 from 1003
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 106
+[01/12/17 01:54:13] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 85
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 202
+[01/12/17 01:54:13] Peer 1004 has downloaded the piece 95 from 1000
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 140
+[01/12/17 01:54:13] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:13] Peer 1004 has downloaded the piece 18 from 1000
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1002 for the piece 162
+[01/12/17 01:54:13] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 162
+[01/12/17 01:54:13] Peer 1004 has downloaded the piece 105 from 1003
+[01/12/17 01:54:13] Peer 1004 has the optimistically unchoke neighbor 1001
+[01/12/17 01:54:13] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:13] Peer 1004 is unchoked by Peer 1001
+[01/12/17 01:54:13] Peer 1004 has downloaded the piece 52 from 1000
+[01/12/17 01:54:13] Peer 1004 received the 'have' message from Peer 1001 for the piece 84
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 181
+[01/12/17 01:54:14] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 106
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 255
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 56
+[01/12/17 01:54:14] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:14] Peer 1004 has downloaded the piece 78 from 1000
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 169
+[01/12/17 01:54:14] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:14] Peer 1004 has downloaded the piece 238 from 1003
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 102
+[01/12/17 01:54:14] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 19
+[01/12/17 01:54:14] Peer 1004 has downloaded the piece 163 from 1000
+[01/12/17 01:54:14] Peer 1004 has downloaded the piece 251 from 1001
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1002 for the piece 17
+[01/12/17 01:54:14] Peer 1004 received the 'have' message from Peer 1001 for the piece 88
+[01/12/17 01:54:15] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1001 for the piece 280
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 14
+[01/12/17 01:54:15] Peer 1004 has downloaded the piece 255 from 1000
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 253
+[01/12/17 01:54:15] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:15] Peer 1004 has downloaded the piece 254 from 1003
+[01/12/17 01:54:15] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:15] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:15] Peer 1004 has downloaded the piece 147 from 1003
+[01/12/17 01:54:15] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1001 for the piece 1
+[01/12/17 01:54:15] Peer 1004 has downloaded the piece 244 from 1000
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1001 for the piece 273
+[01/12/17 01:54:15] Peer 1004 received the 'have' message from Peer 1002 for the piece 136
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 30
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 107
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 164
+[01/12/17 01:54:16] Peer 1004 has downloaded the piece 116 from 1001
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 2
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 140
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 139
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 4
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 98
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 259
+[01/12/17 01:54:16] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:16] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 41
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 139
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1001 for the piece 92
+[01/12/17 01:54:16] Peer 1004 received the 'interested' message from 1001
+[01/12/17 01:54:16] Peer 1004 received the 'have' message from Peer 1002 for the piece 66
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 237
+[01/12/17 01:54:17] Peer 1004 received the 'interested' message from 1002
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 10
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 256
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 198
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 74
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 159
+[01/12/17 01:54:17] Peer 1004 is choked by Peer 1000
+[01/12/17 01:54:17] Peer 1004 is choked by Peer 1001
+[01/12/17 01:54:17] Peer 1004 is choked by Peer 1003
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 186
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 17
+[01/12/17 01:54:17] Peer 1004: has the preferred neighbors 1002, 1001
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1002 for the piece 53
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 157
+[01/12/17 01:54:17] Peer 1004 received the 'have' message from Peer 1001 for the piece 58
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 35
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 115
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 221
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 216
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 185
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 18
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 117
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 285
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 240
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1001 for the piece 258
+[01/12/17 01:54:18] Peer 1004 received the 'have' message from Peer 1002 for the piece 285
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 94
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 133
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 208
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 89
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 135
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 70
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 56
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 20
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1001 for the piece 244
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 268
+[01/12/17 01:54:19] Peer 1004 received the 'have' message from Peer 1002 for the piece 279
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 225
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 116
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 166
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 255
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 35
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 147
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 15
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1002 for the piece 105
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 105
+[01/12/17 01:54:20] Peer 1004 received the 'have' message from Peer 1001 for the piece 180
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 284
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1001 for the piece 108
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 219
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1001 for the piece 70
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 58
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1001 for the piece 195
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 104
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1001 for the piece 220
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1001 for the piece 38
+[01/12/17 01:54:21] Peer 1004 received the 'have' message from Peer 1002 for the piece 254
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 107
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 182
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 254
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 225
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 263
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 7
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 25
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 150
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 136
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1002 for the piece 113
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 199
+[01/12/17 01:54:22] Peer 1004 received the 'have' message from Peer 1001 for the piece 68
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 38
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 240
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 86
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 102
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 238
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 271
+[01/12/17 01:54:23] Peer 1004 received the 'not interested' message from 1002
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 252
+[01/12/17 01:54:23] Peer 1004: has the preferred neighbors 1001, 1003
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1002 for the piece 195
+[01/12/17 01:54:23] Peer 1004 received the 'have' message from Peer 1001 for the piece 71
+[01/12/17 01:54:24] Peer 1004 received the 'have' message from Peer 1002 for the piece 250
+[01/12/17 01:54:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 198
+[01/12/17 01:54:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 284
+[01/12/17 01:54:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 5
+[01/12/17 01:54:24] Peer 1004 received the 'have' message from Peer 1001 for the piece 54
+[01/12/17 01:54:24] Peer 1004 received the 'not interested' message from 1001
+[01/12/17 01:54:25] Peer 1004: has the preferred neighbors 1003

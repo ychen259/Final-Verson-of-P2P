@@ -30,6 +30,7 @@ public class peerProcess {
     int numberOfPieceIhave = 0;
 
     int filesize;
+    boolean finish = false;
 
     byte [] requestedBitfield;
     Map<Integer,Boolean> neighborIChoke = new HashMap<Integer, Boolean>();  //the neighbor send me choke message

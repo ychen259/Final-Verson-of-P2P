@@ -72,9 +72,9 @@ public class OptimisticalNeighbor implements Runnable {
 
   public void run(){
 
-    /*if(peer.finish){
+    if(peer.finish){
       System.exit(0);
-    }*/
+    }
 
     int optimisticalId = generateARandomOptimisticalNeighbor(peer);
     if(optimisticalId == -1) return;

@@ -43,7 +43,7 @@ public class Utilities {
 
     Output: bitfield is 0010 1001
                         1110 0101*/
-  static public void setBitInBitfield(byte[] bitfield, int pieceIndex){
+  static synchronized public void setBitInBitfield(byte[] bitfield, int pieceIndex){
     int row = pieceIndex/8;
     int column = pieceIndex %8 ;
     int position = 7 - column;
@@ -246,7 +246,7 @@ static public void writeToFile(String filename, String context){
     System.out.println();
   }
 
-  static synchronized public void sendMessage(DataOutputStream outstream, byte[] msg){
+  static  public void sendMessage(DataOutputStream outstream, byte[] msg){
     //synchronized(ReceiveHandler.class){
       try{
       
@@ -258,6 +258,7 @@ static public void writeToFile(String filename, String context){
       }
     
       catch(IOException ioException){
+        System.exit(0);
         ioException.printStackTrace();
       }
     }

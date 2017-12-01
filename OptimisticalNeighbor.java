@@ -71,32 +71,33 @@ public class OptimisticalNeighbor implements Runnable {
   }
 
   public void run(){
+    synchronized(StartRemotePeers.class){
+      if(peer.finish){
+       System.exit(0);
+      }
 
-    if(peer.finish){
-      System.exit(0);
+      int optimisticalId = generateARandomOptimisticalNeighbor(peer);
+      if(optimisticalId == -1) return;
+
+      if(peer.optimistically_neighbor != optimisticalId){
+          String filename = "./peer_" + peer.peerId + "/log_peer_" + peer.peerId + ".log";
+          String context = "Peer " + peer.peerId + " has the optimistically unchoke neighbor " + optimisticalId;
+          Utilities.writeToFile(filename, context);
+          peer.optimistically_neighbor = optimisticalId;
+      }
+
+      DataOutputStream out = allOutStream.get(optimisticalId);
+
+      peer.neighborIChoke.put(optimisticalId, false);
+
+      message unchokeMsg = (new message()).unchoke();
+
+      /*send a unchoke message*/
+      Utilities util = new Utilities();
+      util.sendMessage(out, unchokeMsg.message);
+
+      System.out.println("Peer " + peer.peerId + ": unchoke message send to " + optimisticalId + "in optimistical!!!!!!!!!!!!");
     }
-
-    int optimisticalId = generateARandomOptimisticalNeighbor(peer);
-    if(optimisticalId == -1) return;
-
-    if(peer.optimistically_neighbor != optimisticalId){
-        String filename = "./peer_" + peer.peerId + "/log_peer_" + peer.peerId + ".log";
-        String context = "Peer " + peer.peerId + " has the optimistically unchoke neighbor " + optimisticalId;
-        Utilities.writeToFile(filename, context);
-        peer.optimistically_neighbor = optimisticalId;
-    }
-
-    DataOutputStream out = allOutStream.get(optimisticalId);
-
-    peer.neighborIChoke.put(optimisticalId, false);
-
-    message unchokeMsg = (new message()).unchoke();
-
-    /*send a unchoke message*/
-    Utilities util = new Utilities();
-    util.sendMessage(out, unchokeMsg.message);
-
-    System.out.println("Peer " + peer.peerId + ": unchoke message send to " + optimisticalId + "in optimistical!!!!!!!!!!!!");
 
   }
 }

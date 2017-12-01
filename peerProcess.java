@@ -115,7 +115,11 @@ public class peerProcess {
             Utilities.setBitInBitfield(full, j);  /*all 1 for bitfield*/
          }
 
-        requestedBitfield = empty; /*set requested bitfield to all 0*/
+        byte [] empty1 = new byte[sizeOfbitfield];
+                for(int j = 0; j < sizeOfbitfield; j++){
+           empty1[j] = (byte)0x00; /*empty[] = 0000 0000*/
+        }
+        requestedBitfield = empty1; /*set requested bitfield to all 0*/
 
         /*set the bitfield to all one if the peer has complete file*/
         /*set the bitfield to all zero if the peer has not file*/

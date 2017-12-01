@@ -39,7 +39,7 @@ public class preferredNeighbor implements Runnable {
   }*/
 
     public void run(){
-
+      synchronized(StartRemotePeers.class){
         if(peer.finish){
           System.exit(0);
         }
@@ -213,6 +213,7 @@ public class preferredNeighbor implements Runnable {
           }       
 
         }
+      }
 
     }
 }

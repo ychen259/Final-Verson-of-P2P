@@ -71,7 +71,7 @@ public class OptimisticalNeighbor implements Runnable {
   }
 
   public void run(){
-    synchronized(StartRemotePeers.class){
+    //synchronized(StartRemotePeers.class){
       if(peer.finish){
        System.exit(0);
       }
@@ -99,5 +99,5 @@ public class OptimisticalNeighbor implements Runnable {
       System.out.println("Peer " + peer.peerId + ": unchoke message send to " + optimisticalId + "in optimistical!!!!!!!!!!!!");
     }
 
-  }
+  //}
 }
